@@ -17,6 +17,11 @@
 		B332897B20B416330016FF3E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B332897A20B416330016FF3E /* main.m */; };
 		B332898520B416330016FF3E /* LeoWorkshopOCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B332898420B416330016FF3E /* LeoWorkshopOCTests.m */; };
 		B332899020B416330016FF3E /* LeoWorkshopOCUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B332898F20B416330016FF3E /* LeoWorkshopOCUITests.m */; };
+		B3A00A9220B434E70019C5C2 /* NLWXEventModule.m in Sources */ = {isa = PBXBuildFile; fileRef = B3A00A8820B434E70019C5C2 /* NLWXEventModule.m */; };
+		B3A00A9320B434E70019C5C2 /* NLWXImageLoaderDefaultImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = B3A00A8920B434E70019C5C2 /* NLWXImageLoaderDefaultImpl.m */; };
+		B3A00A9420B434E70019C5C2 /* NLWXGifImageComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = B3A00A8A20B434E70019C5C2 /* NLWXGifImageComponent.m */; };
+		B3A00A9520B434E70019C5C2 /* NLWeexSDKManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B3A00A8C20B434E70019C5C2 /* NLWeexSDKManager.m */; };
+		B3A00A9620B434E70019C5C2 /* NLWeexViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3A00A9020B434E70019C5C2 /* NLWeexViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +62,16 @@
 		B332898B20B416330016FF3E /* LeoWorkshopOCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LeoWorkshopOCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B332898F20B416330016FF3E /* LeoWorkshopOCUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LeoWorkshopOCUITests.m; sourceTree = "<group>"; };
 		B332899120B416330016FF3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B3A00A8820B434E70019C5C2 /* NLWXEventModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NLWXEventModule.m; sourceTree = "<group>"; };
+		B3A00A8920B434E70019C5C2 /* NLWXImageLoaderDefaultImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NLWXImageLoaderDefaultImpl.m; sourceTree = "<group>"; };
+		B3A00A8A20B434E70019C5C2 /* NLWXGifImageComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NLWXGifImageComponent.m; sourceTree = "<group>"; };
+		B3A00A8B20B434E70019C5C2 /* NLWeexViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NLWeexViewController.h; sourceTree = "<group>"; };
+		B3A00A8C20B434E70019C5C2 /* NLWeexSDKManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NLWeexSDKManager.m; sourceTree = "<group>"; };
+		B3A00A8D20B434E70019C5C2 /* NLWXGifImageComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NLWXGifImageComponent.h; sourceTree = "<group>"; };
+		B3A00A8E20B434E70019C5C2 /* NLWXImageLoaderDefaultImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NLWXImageLoaderDefaultImpl.h; sourceTree = "<group>"; };
+		B3A00A8F20B434E70019C5C2 /* NLWXEventModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NLWXEventModule.h; sourceTree = "<group>"; };
+		B3A00A9020B434E70019C5C2 /* NLWeexViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NLWeexViewController.m; sourceTree = "<group>"; };
+		B3A00A9120B434E70019C5C2 /* NLWeexSDKManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NLWeexSDKManager.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +142,7 @@
 		B332896720B416320016FF3E /* LeoWorkshopOC */ = {
 			isa = PBXGroup;
 			children = (
+				B3A00A8720B434E70019C5C2 /* WeexExample */,
 				B332896820B416320016FF3E /* AppDelegate.h */,
 				B332896920B416320016FF3E /* AppDelegate.m */,
 				B332896B20B416320016FF3E /* ViewController.h */,
@@ -157,6 +173,23 @@
 				B332899120B416330016FF3E /* Info.plist */,
 			);
 			path = LeoWorkshopOCUITests;
+			sourceTree = "<group>";
+		};
+		B3A00A8720B434E70019C5C2 /* WeexExample */ = {
+			isa = PBXGroup;
+			children = (
+				B3A00A9120B434E70019C5C2 /* NLWeexSDKManager.h */,
+				B3A00A8C20B434E70019C5C2 /* NLWeexSDKManager.m */,
+				B3A00A8F20B434E70019C5C2 /* NLWXEventModule.h */,
+				B3A00A8820B434E70019C5C2 /* NLWXEventModule.m */,
+				B3A00A8E20B434E70019C5C2 /* NLWXImageLoaderDefaultImpl.h */,
+				B3A00A8920B434E70019C5C2 /* NLWXImageLoaderDefaultImpl.m */,
+				B3A00A8A20B434E70019C5C2 /* NLWXGifImageComponent.m */,
+				B3A00A8D20B434E70019C5C2 /* NLWXGifImageComponent.h */,
+				B3A00A8B20B434E70019C5C2 /* NLWeexViewController.h */,
+				B3A00A9020B434E70019C5C2 /* NLWeexViewController.m */,
+			);
+			path = WeexExample;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -332,8 +365,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3A00A9220B434E70019C5C2 /* NLWXEventModule.m in Sources */,
 				B332896D20B416320016FF3E /* ViewController.m in Sources */,
 				B332897320B416320016FF3E /* LeoWorkshopOC.xcdatamodeld in Sources */,
+				B3A00A9420B434E70019C5C2 /* NLWXGifImageComponent.m in Sources */,
+				B3A00A9620B434E70019C5C2 /* NLWeexViewController.m in Sources */,
+				B3A00A9320B434E70019C5C2 /* NLWXImageLoaderDefaultImpl.m in Sources */,
+				B3A00A9520B434E70019C5C2 /* NLWeexSDKManager.m in Sources */,
 				B332897B20B416330016FF3E /* main.m in Sources */,
 				B332896A20B416320016FF3E /* AppDelegate.m in Sources */,
 			);
@@ -509,7 +547,10 @@
 				DEVELOPMENT_TEAM = 66HY7G99ZJ;
 				INFOPLIST_FILE = LeoWorkshopOC/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.leo.LeoWorkshopOC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -525,7 +566,10 @@
 				DEVELOPMENT_TEAM = 66HY7G99ZJ;
 				INFOPLIST_FILE = LeoWorkshopOC/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.leo.LeoWorkshopOC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -539,7 +583,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4T3V6PQU3W;
 				INFOPLIST_FILE = LeoWorkshopOCTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.leo.LeoWorkshopOCTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -554,7 +602,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4T3V6PQU3W;
 				INFOPLIST_FILE = LeoWorkshopOCTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.leo.LeoWorkshopOCTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -568,7 +620,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4T3V6PQU3W;
 				INFOPLIST_FILE = LeoWorkshopOCUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.leo.LeoWorkshopOCUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -582,7 +638,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4T3V6PQU3W;
 				INFOPLIST_FILE = LeoWorkshopOCUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.leo.LeoWorkshopOCUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";

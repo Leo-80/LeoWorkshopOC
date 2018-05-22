@@ -1,5 +1,6 @@
 PODS:
   - FLAnimatedImage (1.0.12)
+  - Masonry (1.1.0)
   - SDWebImage/Core (4.3.3)
   - SDWebImage/GIF (4.3.3):
     - FLAnimatedImage (~> 1.0)
@@ -7,20 +8,23 @@ PODS:
   - WeexSDK (0.18.0)
 
 DEPENDENCIES:
+  - Masonry
   - SDWebImage/GIF
   - WeexSDK
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - FLAnimatedImage
+    - Masonry
     - SDWebImage
     - WeexSDK
 
 SPEC CHECKSUMS:
   FLAnimatedImage: 4a0b56255d9b05f18b6dd7ee06871be5d3b89e31
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   SDWebImage: de4d90b5bff3571eae7bd16202b1f43135409fa5
   WeexSDK: ac56f255ce9a48e93ebc2e003956ab20da33321d
 
-PODFILE CHECKSUM: 14231689a88f0b6f02a7a8bcff381c8cc157b66a
+PODFILE CHECKSUM: 8f7830f5acd431b66a92ecba603e2177cc0835e3
 
 COCOAPODS: 1.5.0
