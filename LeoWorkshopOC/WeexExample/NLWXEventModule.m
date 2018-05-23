@@ -21,8 +21,9 @@ WX_EXPORT_METHOD(@selector(gotoString:)) // 异步方法
  @param callback 回调返回给weex所需数据
  */
 - (void)getgobaltoken:(NSString *)weexJsonStr callback:(WXModuleKeepAliveCallback)callback{
-    
-    callback(weexJsonStr,YES);
+    [self showMessage:weexJsonStr];
+    NSString * str = [NSString stringWithFormat:@"this weex to native weexJsonStr !!!"];
+    callback(str,YES);
 }
 
 /**
@@ -31,7 +32,7 @@ WX_EXPORT_METHOD(@selector(gotoString:)) // 异步方法
  @param urlstr 交互数据
  */
 - (void)gotomyter:(NSString *)urlstr{
-    NSLog(@"urlstr :%@",urlstr);
+    [self showMessage:urlstr];
 }
 
 /**
@@ -40,7 +41,19 @@ WX_EXPORT_METHOD(@selector(gotoString:)) // 异步方法
  @param str 交互数据
  */
 - (void)gotoString:(NSString *)str{
-    NSLog(@"str : %@", str);
+    
+    [self showMessage:str];
 }
 
+- (void)showMessage:(NSString *)message{
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"交互提示"
+                                                                             message:message
+                                                                      preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction *OKAction = [UIAlertAction actionWithTitle:@"好的" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+    }];
+    [alertController addAction:OKAction];
+    
+    UIViewController * myRootViewController = [[UIApplication sharedApplication].keyWindow rootViewController];
+  [myRootViewController presentViewController:alertController animated:YES completion:nil];
+}
 @end

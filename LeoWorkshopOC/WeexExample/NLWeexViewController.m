@@ -28,7 +28,9 @@
     [super viewDidLoad];
     
     self.view.backgroundColor = [UIColor whiteColor];
+    self.title = @"weex view controller";
     // Do any additional setup after loading the view.
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"FireWeex" style:UIBarButtonItemStyleDone target:self action:@selector(fireWeexAction)];
     [self weexRender];
 }
 

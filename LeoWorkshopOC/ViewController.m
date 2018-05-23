@@ -66,7 +66,7 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     NLWeexViewController * weexVC =  [[NLWeexViewController alloc] init];
-    weexVC.weexUrl = @"https://itest.jw830.com/activity/stgpk-weex/dist/index.js";
+    weexVC.weexUrl = [NSString stringWithFormat:@"file://%@/index.native.js",[NSBundle mainBundle].bundlePath];
     [self.navigationController pushViewController:weexVC animated:YES];
 }
 - (void)didReceiveMemoryWarning {

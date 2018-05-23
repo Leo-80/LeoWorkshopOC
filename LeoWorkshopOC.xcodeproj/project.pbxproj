@@ -22,6 +22,7 @@
 		B3A00A9420B434E70019C5C2 /* NLWXGifImageComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = B3A00A8A20B434E70019C5C2 /* NLWXGifImageComponent.m */; };
 		B3A00A9520B434E70019C5C2 /* NLWeexSDKManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B3A00A8C20B434E70019C5C2 /* NLWeexSDKManager.m */; };
 		B3A00A9620B434E70019C5C2 /* NLWeexViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3A00A9020B434E70019C5C2 /* NLWeexViewController.m */; };
+		B3A00AA020B588C60019C5C2 /* index.native.js in Resources */ = {isa = PBXBuildFile; fileRef = B3A00A9F20B588C60019C5C2 /* index.native.js */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,7 @@
 		B3A00A8F20B434E70019C5C2 /* NLWXEventModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NLWXEventModule.h; sourceTree = "<group>"; };
 		B3A00A9020B434E70019C5C2 /* NLWeexViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NLWeexViewController.m; sourceTree = "<group>"; };
 		B3A00A9120B434E70019C5C2 /* NLWeexSDKManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NLWeexSDKManager.h; sourceTree = "<group>"; };
+		B3A00A9F20B588C60019C5C2 /* index.native.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = index.native.js; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,6 +180,7 @@
 		B3A00A8720B434E70019C5C2 /* WeexExample */ = {
 			isa = PBXGroup;
 			children = (
+				B3A00A9F20B588C60019C5C2 /* index.native.js */,
 				B3A00A9120B434E70019C5C2 /* NLWeexSDKManager.h */,
 				B3A00A8C20B434E70019C5C2 /* NLWeexSDKManager.m */,
 				B3A00A8F20B434E70019C5C2 /* NLWXEventModule.h */,
@@ -300,6 +303,7 @@
 				B332897820B416330016FF3E /* LaunchScreen.storyboard in Resources */,
 				B332897520B416330016FF3E /* Assets.xcassets in Resources */,
 				B332897020B416320016FF3E /* Main.storyboard in Resources */,
+				B3A00AA020B588C60019C5C2 /* index.native.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

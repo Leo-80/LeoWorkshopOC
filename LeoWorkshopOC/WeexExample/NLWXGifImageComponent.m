@@ -29,6 +29,10 @@ WX_EXPORT_METHOD(@selector(getGifURL:))
     [super viewDidLoad];
 }
 
+/**
+ Initializes a new component using the specified  properties
+  @param attributes 参数中可取到 js中控件属性 value
+ */
 - (instancetype)initWithRef:(NSString *)ref type:(NSString *)type styles:(NSDictionary *)styles attributes:(NSDictionary *)attributes events:(NSArray *)events weexInstance:(WXSDKInstance *)weexInstance {
     if(self = [super initWithRef:ref type:type styles:styles attributes:attributes events:events weexInstance:weexInstance]) {
         
@@ -38,10 +42,20 @@ WX_EXPORT_METHOD(@selector(getGifURL:))
     }
     return self;
 }
+
+/**
+ weex主动传递显示的gif路径
+
+ @param url gif路径
+ */
 - (void)getGifURL:(NSString *)url{
     _gifUrl = url;
     [self uploadGifImageView];
 }
+
+/**
+ 利用 SDWebImage 三方库 实现gif图片显示
+ */
 - (void)uploadGifImageView{
     
     [self.view addSubview:self.gifImageView];
