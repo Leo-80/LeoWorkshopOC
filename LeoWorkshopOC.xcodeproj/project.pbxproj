@@ -23,6 +23,7 @@
 		B3A00A9520B434E70019C5C2 /* NLWeexSDKManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B3A00A8C20B434E70019C5C2 /* NLWeexSDKManager.m */; };
 		B3A00A9620B434E70019C5C2 /* NLWeexViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3A00A9020B434E70019C5C2 /* NLWeexViewController.m */; };
 		B3A00AA020B588C60019C5C2 /* index.native.js in Resources */ = {isa = PBXBuildFile; fileRef = B3A00A9F20B588C60019C5C2 /* index.native.js */; };
+		B3E6EEF120C17B1C004489B0 /* NLThreadExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E6EEF020C17B1C004489B0 /* NLThreadExampleViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +75,9 @@
 		B3A00A9020B434E70019C5C2 /* NLWeexViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NLWeexViewController.m; sourceTree = "<group>"; };
 		B3A00A9120B434E70019C5C2 /* NLWeexSDKManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NLWeexSDKManager.h; sourceTree = "<group>"; };
 		B3A00A9F20B588C60019C5C2 /* index.native.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = index.native.js; sourceTree = "<group>"; };
+		B3E6EEEF20C17B1C004489B0 /* NLThreadExampleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NLThreadExampleViewController.h; sourceTree = "<group>"; };
+		B3E6EEF020C17B1C004489B0 /* NLThreadExampleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NLThreadExampleViewController.m; sourceTree = "<group>"; };
+		B3E6EEF420C17F8A004489B0 /* LeoWorkshopOC_PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeoWorkshopOC_PrefixHeader.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +148,7 @@
 		B332896720B416320016FF3E /* LeoWorkshopOC */ = {
 			isa = PBXGroup;
 			children = (
+				B3E6EEEE20C17A8C004489B0 /* ThreadExample */,
 				B3A00A8720B434E70019C5C2 /* WeexExample */,
 				B332896820B416320016FF3E /* AppDelegate.h */,
 				B332896920B416320016FF3E /* AppDelegate.m */,
@@ -154,6 +159,7 @@
 				B332897620B416330016FF3E /* LaunchScreen.storyboard */,
 				B332897920B416330016FF3E /* Info.plist */,
 				B332897A20B416330016FF3E /* main.m */,
+				B3E6EEF420C17F8A004489B0 /* LeoWorkshopOC_PrefixHeader.pch */,
 				B332897120B416320016FF3E /* LeoWorkshopOC.xcdatamodeld */,
 			);
 			path = LeoWorkshopOC;
@@ -193,6 +199,15 @@
 				B3A00A9020B434E70019C5C2 /* NLWeexViewController.m */,
 			);
 			path = WeexExample;
+			sourceTree = "<group>";
+		};
+		B3E6EEEE20C17A8C004489B0 /* ThreadExample */ = {
+			isa = PBXGroup;
+			children = (
+				B3E6EEEF20C17B1C004489B0 /* NLThreadExampleViewController.h */,
+				B3E6EEF020C17B1C004489B0 /* NLThreadExampleViewController.m */,
+			);
+			path = ThreadExample;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,6 +274,7 @@
 		B332895D20B416310016FF3E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = NL;
 				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = leo;
 				TargetAttributes = {
@@ -376,6 +392,7 @@
 				B3A00A9620B434E70019C5C2 /* NLWeexViewController.m in Sources */,
 				B3A00A9320B434E70019C5C2 /* NLWXImageLoaderDefaultImpl.m in Sources */,
 				B3A00A9520B434E70019C5C2 /* NLWeexSDKManager.m in Sources */,
+				B3E6EEF120C17B1C004489B0 /* NLThreadExampleViewController.m in Sources */,
 				B332897B20B416330016FF3E /* main.m in Sources */,
 				B332896A20B416320016FF3E /* AppDelegate.m in Sources */,
 			);
@@ -549,6 +566,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 66HY7G99ZJ;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PRODUCT_NAME)/LeoWorkshopOC_PrefixHeader.pch";
 				INFOPLIST_FILE = LeoWorkshopOC/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -568,6 +586,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 66HY7G99ZJ;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PRODUCT_NAME)/LeoWorkshopOC_PrefixHeader.pch";
 				INFOPLIST_FILE = LeoWorkshopOC/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (

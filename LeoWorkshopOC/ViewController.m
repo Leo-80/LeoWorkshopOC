@@ -7,12 +7,13 @@
 //
 
 #import "ViewController.h"
-#import <Masonry.h>
 #import "NLWeexViewController.h"
+#import "NLThreadExampleViewController.h"
 
 @interface ViewController ()<UITableViewDataSource,UITableViewDelegate>
 
 @property (nonatomic, strong) UITableView * vcTableView;
+@property (nonatomic, strong) NSArray *dataList;
 @end
 
 @implementation ViewController
@@ -38,6 +39,7 @@
 }
 
 - (void)layoutView{
+    _dataList = [NSArray arrayWithObjects:@"weex example",@"NSThread NSOperation GCD",nil];
     __weak __typeof(self) wself = self;
     [self.view addSubview:self.vcTableView];
     [self.vcTableView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -48,7 +50,7 @@
 #pragma mark UITableViewDataSource
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 1;
+    return _dataList.count;
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     static NSString * cellIdentifier = @"cellIdentifier";
@@ -57,7 +59,7 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
     }
-    cell.textLabel.text = @"weex example";
+    cell.textLabel.text = [_dataList objectAtIndex:indexPath.row];
     return cell;
 }
 
@@ -65,9 +67,22 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    NLWeexViewController * weexVC =  [[NLWeexViewController alloc] init];
-    weexVC.weexUrl = [NSString stringWithFormat:@"file://%@/index.native.js",[NSBundle mainBundle].bundlePath];
-    [self.navigationController pushViewController:weexVC animated:YES];
+    switch (indexPath.row) {
+        case 0:{
+            NLWeexViewController * weexVC =  [[NLWeexViewController alloc] init];
+            weexVC.weexUrl = [NSString stringWithFormat:@"file://%@/index.native.js",[NSBundle mainBundle].bundlePath];
+            [self.navigationController pushViewController:weexVC animated:YES];
+        }
+            break;
+        case 1:{
+            NLThreadExampleViewController * theadVC = [[NLThreadExampleViewController alloc] init];
+            [self.navigationController pushViewController:theadVC animated:YES];
+        }
+            break;
+        default:
+            break;
+    }
+    
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

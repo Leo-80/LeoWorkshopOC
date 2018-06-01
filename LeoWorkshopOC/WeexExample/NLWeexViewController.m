@@ -9,13 +9,6 @@
 #import "NLWeexViewController.h"
 #import <WeexSDK.h>
 
-#ifdef DEBUG
-# define DLog(format, ...) NSLog((@"[行号:%d]" format), __LINE__, ##__VA_ARGS__);
-#else
-# define DLog(...);
-#endif
-
-
 @interface NLWeexViewController ()
 @property (nonatomic, strong) WXSDKInstance *wxInstance;
 @property (nonatomic, strong) UIView * weexView;

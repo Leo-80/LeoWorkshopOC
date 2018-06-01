@@ -6,4 +6,5 @@ target 'LeoWorkshopOC' do
     pod 'SDWebImage/GIF'
     pod 'WeexSDK'
     pod 'Masonry'
+    pod 'YYCategories'
 end
