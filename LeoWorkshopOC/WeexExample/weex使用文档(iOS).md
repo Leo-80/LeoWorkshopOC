@@ -1,8 +1,8 @@
-#Weex集成到已有项目与使用
+# Weex集成到已有项目与使用
 
-##一、集成到iOS
+## 一、集成到iOS
 
-###第一步：添加依赖
+### 第一步：添加依赖
 
 使用[CocoaPods](https://cocoapods.org)
 	
@@ -12,7 +12,7 @@
 	end
 [Weex 官方地址](http://weex.apache.org/cn/guide/),其中包含SDK手动集成过程。
 
-###第二步：初始化
+### 第二步：初始化
 
 在文件<font color ="#dd00dd">AppDelegate.m</font> 文件中做初始化操作，一般会在<font color ="#dd00dd">didFinishLaunchingWithOptions</font>方法中添加，
 
@@ -50,7 +50,7 @@ DEMO中对初始化步骤进行了封装，在<font color ="#dd00dd">NLWeexSDKMa
 
 * <font color ="#dd00dd"> WXLog</font> 文件中包含设置 weex输出日志的方法。**建议放在debug模式下使用**
 
-###第三步：渲染Weex Instance
+### 第三步：渲染Weex Instance
 
 Weex 支持整体页面渲染和部分渲染两种模式，你需要做的事情是用指定的 URL 渲染 Weex 的 view，然后添加到它的父容器上，父容器一般都是 viewController。DEMO中创建一个整体页面渲染的ViewController类<font color ="#dd00dd">NLWeexViewController</font>
 
@@ -148,7 +148,7 @@ Weex 支持整体页面渲染和部分渲染两种模式，你需要做的事情
 }
 ```
 
-###第四步：销毁 Weex Instance
+### 第四步：销毁 Weex Instance
 
 在 viewController 的 dealloc 阶段 销毁掉 Weex instance，释放内存，避免造成内存泄露。
 
@@ -158,11 +158,11 @@ Weex 支持整体页面渲染和部分渲染两种模式，你需要做的事情
 }
 ```
 
-#扩展iOS的功能
+# 扩展iOS的功能
 
 [Weex 扩展iOS的功能地址](http://weex.apache.org/cn/guide/extend-ios.html)
 由于weex官方文档写的足够详细，易懂这里不赘述。下面结合DEMO的具体解析下用法
-###自定义module
+### 自定义module
 
 自定义module换句话说就是native暴露方法给 JavaScript 使用，其中可完成传参和回调数据给JavaScript
 
@@ -227,7 +227,7 @@ WX_EXPORT_METHOD(@selector(gotoString:)) // 异步方法
 [WXSDKEngine registerModule:@"weexToNative" withClass:NSClassFromString(@"NLWXEventModule")]; //注册weex交互事件
 ```
 
-###Component 扩展
+### Component 扩展
 
 component扩展换句话说就是native实现一个功能带UI的组件，JavaScript 可以把它当做自己div等方法使用。
 
@@ -347,7 +347,7 @@ WX_EXPORT_METHOD(@selector(getGifURL:))
 [WXSDKEngine registerComponent:@"gifimage" withClass:NSClassFromString(@"NLWXGifImageComponent")]; // 注册weex交互组件
 ```
 
-##参考链接：
+## 参考链接：
 
 [于德志 (@halfrost)博客](https://halfrost.com/weex_event/)
 
