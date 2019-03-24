@@ -23,6 +23,10 @@
 		B3A00A9520B434E70019C5C2 /* NLWeexSDKManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B3A00A8C20B434E70019C5C2 /* NLWeexSDKManager.m */; };
 		B3A00A9620B434E70019C5C2 /* NLWeexViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3A00A9020B434E70019C5C2 /* NLWeexViewController.m */; };
 		B3A00AA020B588C60019C5C2 /* index.native.js in Resources */ = {isa = PBXBuildFile; fileRef = B3A00A9F20B588C60019C5C2 /* index.native.js */; };
+		B3AA749B22472D2E005CAEC2 /* 1553073016455.txt in Resources */ = {isa = PBXBuildFile; fileRef = B3AA749722472D2E005CAEC2 /* 1553073016455.txt */; };
+		B3AA749C22472D2E005CAEC2 /* 1553152856148.txt in Resources */ = {isa = PBXBuildFile; fileRef = B3AA749822472D2E005CAEC2 /* 1553152856148.txt */; };
+		B3AA749F22472FA6005CAEC2 /* NLLrcParseTool.m in Sources */ = {isa = PBXBuildFile; fileRef = B3AA749E22472FA6005CAEC2 /* NLLrcParseTool.m */; };
+		B3AA74A222473024005CAEC2 /* NLLrcParseTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3AA74A122473024005CAEC2 /* NLLrcParseTestViewController.m */; };
 		B3E6EEF120C17B1C004489B0 /* NLThreadExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E6EEF020C17B1C004489B0 /* NLThreadExampleViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -75,6 +79,12 @@
 		B3A00A9020B434E70019C5C2 /* NLWeexViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NLWeexViewController.m; sourceTree = "<group>"; };
 		B3A00A9120B434E70019C5C2 /* NLWeexSDKManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NLWeexSDKManager.h; sourceTree = "<group>"; };
 		B3A00A9F20B588C60019C5C2 /* index.native.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = index.native.js; sourceTree = "<group>"; };
+		B3AA749722472D2E005CAEC2 /* 1553073016455.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 1553073016455.txt; sourceTree = "<group>"; };
+		B3AA749822472D2E005CAEC2 /* 1553152856148.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 1553152856148.txt; sourceTree = "<group>"; };
+		B3AA749D22472FA6005CAEC2 /* NLLrcParseTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NLLrcParseTool.h; sourceTree = "<group>"; };
+		B3AA749E22472FA6005CAEC2 /* NLLrcParseTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NLLrcParseTool.m; sourceTree = "<group>"; };
+		B3AA74A022473024005CAEC2 /* NLLrcParseTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NLLrcParseTestViewController.h; sourceTree = "<group>"; };
+		B3AA74A122473024005CAEC2 /* NLLrcParseTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NLLrcParseTestViewController.m; sourceTree = "<group>"; };
 		B3E6EEEF20C17B1C004489B0 /* NLThreadExampleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NLThreadExampleViewController.h; sourceTree = "<group>"; };
 		B3E6EEF020C17B1C004489B0 /* NLThreadExampleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NLThreadExampleViewController.m; sourceTree = "<group>"; };
 		B3E6EEF420C17F8A004489B0 /* LeoWorkshopOC_PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeoWorkshopOC_PrefixHeader.pch; sourceTree = "<group>"; };
@@ -148,6 +158,7 @@
 		B332896720B416320016FF3E /* LeoWorkshopOC */ = {
 			isa = PBXGroup;
 			children = (
+				B3AA749522472D2E005CAEC2 /* LrcParseTool */,
 				B3E6EEEE20C17A8C004489B0 /* ThreadExample */,
 				B3A00A8720B434E70019C5C2 /* WeexExample */,
 				B332896820B416320016FF3E /* AppDelegate.h */,
@@ -199,6 +210,19 @@
 				B3A00A9020B434E70019C5C2 /* NLWeexViewController.m */,
 			);
 			path = WeexExample;
+			sourceTree = "<group>";
+		};
+		B3AA749522472D2E005CAEC2 /* LrcParseTool */ = {
+			isa = PBXGroup;
+			children = (
+				B3AA749722472D2E005CAEC2 /* 1553073016455.txt */,
+				B3AA749822472D2E005CAEC2 /* 1553152856148.txt */,
+				B3AA749D22472FA6005CAEC2 /* NLLrcParseTool.h */,
+				B3AA749E22472FA6005CAEC2 /* NLLrcParseTool.m */,
+				B3AA74A022473024005CAEC2 /* NLLrcParseTestViewController.h */,
+				B3AA74A122473024005CAEC2 /* NLLrcParseTestViewController.m */,
+			);
+			path = LrcParseTool;
 			sourceTree = "<group>";
 		};
 		B3E6EEEE20C17A8C004489B0 /* ThreadExample */ = {
@@ -317,8 +341,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				B332897820B416330016FF3E /* LaunchScreen.storyboard in Resources */,
+				B3AA749C22472D2E005CAEC2 /* 1553152856148.txt in Resources */,
 				B332897520B416330016FF3E /* Assets.xcassets in Resources */,
 				B332897020B416320016FF3E /* Main.storyboard in Resources */,
+				B3AA749B22472D2E005CAEC2 /* 1553073016455.txt in Resources */,
 				B3A00AA020B588C60019C5C2 /* index.native.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -391,8 +417,10 @@
 				B3A00A9420B434E70019C5C2 /* NLWXGifImageComponent.m in Sources */,
 				B3A00A9620B434E70019C5C2 /* NLWeexViewController.m in Sources */,
 				B3A00A9320B434E70019C5C2 /* NLWXImageLoaderDefaultImpl.m in Sources */,
+				B3AA749F22472FA6005CAEC2 /* NLLrcParseTool.m in Sources */,
 				B3A00A9520B434E70019C5C2 /* NLWeexSDKManager.m in Sources */,
 				B3E6EEF120C17B1C004489B0 /* NLThreadExampleViewController.m in Sources */,
+				B3AA74A222473024005CAEC2 /* NLLrcParseTestViewController.m in Sources */,
 				B332897B20B416330016FF3E /* main.m in Sources */,
 				B332896A20B416320016FF3E /* AppDelegate.m in Sources */,
 			);

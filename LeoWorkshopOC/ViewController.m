@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "NLWeexViewController.h"
 #import "NLThreadExampleViewController.h"
+#import "NLLrcParseTestViewController.h"
 
 @interface ViewController ()<UITableViewDataSource,UITableViewDelegate>
 
@@ -39,7 +40,7 @@
 }
 
 - (void)layoutView{
-    _dataList = [NSArray arrayWithObjects:@"weex example",@"NSThread NSOperation GCD",nil];
+    _dataList = [NSArray arrayWithObjects:@"weex example",@"NSThread NSOperation GCD",@"Lrc Parse",nil];
     __weak __typeof(self) wself = self;
     [self.view addSubview:self.vcTableView];
     [self.vcTableView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -77,6 +78,11 @@
         case 1:{
             NLThreadExampleViewController * theadVC = [[NLThreadExampleViewController alloc] init];
             [self.navigationController pushViewController:theadVC animated:YES];
+        }
+            break;
+        case 2:{
+            NLLrcParseTestViewController * LPTVC = [[NLLrcParseTestViewController alloc] init];
+            [self.navigationController pushViewController:LPTVC animated:YES];
         }
             break;
         default:
