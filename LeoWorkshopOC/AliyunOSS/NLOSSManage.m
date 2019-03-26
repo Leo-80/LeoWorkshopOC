@@ -9,9 +9,6 @@
 #import "NLOSSManage.h"
 #import <AliyunOSSiOS/OSSService.h>
 
-static NSString * const AccessKeyId = @"LTAIsbbnXwkLRPEy";
-static NSString * const AccessKeySecret = @"GcMx7KRxFz5m2n9U";
-static NSString * const SecurityToken = @"Y1YRTKPOX4/IRAe9Oi7lLcO3hic=";
 static NSString * const bucketName = @"hzweimo";
 static NSString * const endpoint = @"oss-cn-beijing.aliyuncs.com";
 static NSString * const STSURL = @"http://39.106.195.151:7080/";
@@ -55,11 +52,7 @@ static NLOSSManage * ossManage = nil;
 
 
 - (void)initOSSClient{
-//    id<OSSCredentialProvider> credential = [[OSSStsTokenCredentialProvider alloc] initWithAccessKeyId:AccessKeyId secretKeyId:AccessKeySecret securityToken:SecurityToken];
-//    id<OSSCredentialProvider> credential = [[OSSPlainTextAKSKPairCredentialProvider alloc] initWithPlainTextAccessKey:AccessKeyId secretKey:AccessKeySecret];
-//    id<OSSCredentialProvider> credential = [[OSSCustomSignerCredentialProvider alloc] initWithImplementedSigner:^NSString *(NSString *contentToSign, NSError *__autoreleasing *error) {
-//        return [NSString stringWithFormat:@"OSS %@:%@", AccessKeyId, @"7dbWfTveFch6VUylQoIunbfb2qA="];
-//    }];
+    
     id<OSSCredentialProvider> credential = [[OSSAuthCredentialProvider alloc] initWithAuthServerUrl:STSURL];
     [OSSLog enableLog];
     OSSClientConfiguration * conf = [[OSSClientConfiguration alloc] init];
@@ -69,12 +62,11 @@ static NLOSSManage * ossManage = nil;
     self.client = [[OSSClient alloc] initWithEndpoint:endpoint credentialProvider:credential clientConfiguration:conf];
 }
 
-- (void)uploadFilesForAliOSS:(NSString *)filePath{
-//    NSString *lrcPath = @"Users/leo/Documents/LeoWorkshopOC/LeoWorkshopOC/LrcParseTool/1553073016455.txt"; //[[NSBundle mainBundle] pathForResource:@"1553073016455" ofType:@"txt"];
-//
+- (void)uploadFilesForAliOSS:(NSString *)filePath savePath:(NSString *)sPath{
+    
     OSSPutObjectRequest * put = [OSSPutObjectRequest new];
     put.bucketName = bucketName;
-    put.objectKey = @"video/"; //oss 文件夹路径
+    put.objectKey = [NSString stringWithFormat:@"%@/%@_i.mp3",sPath,[self getNowTimeTimestamp]];//@"video/test.mp3"; //oss 文件夹路径
     put.uploadingFileURL = [NSURL fileURLWithPath:filePath];
 //    put.uploadingData = <NSData *>; // 直接上传NSData
     put.uploadProgress = ^(int64_t bytesSent, int64_t totalByteSent, int64_t totalBytesExpectedToSend) {
@@ -111,5 +103,28 @@ static NLOSSManage * ossManage = nil;
         }
         return nil;
     }];
+}
+
+-(NSString *)getNowTimeTimestamp{
+    
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init] ;
+    
+    [formatter setDateStyle:NSDateFormatterMediumStyle];
+    
+    [formatter setTimeStyle:NSDateFormatterShortStyle];
+    
+    [formatter setDateFormat:@"YYYY-MM-dd HH:mm:ss SSS"]; // ----------设置你想要的格式,hh与HH的区别:分别表示12小时制,24小时制
+    
+    //设置时区,这个对于时间的处理有时很重要
+    
+    NSTimeZone* timeZone = [NSTimeZone timeZoneWithName:@"Asia/Shanghai"];
+    
+    [formatter setTimeZone:timeZone];
+    
+    NSDate *datenow = [NSDate date];//现在时间,你可以输出来看下是什么格式
+    
+    NSString *timeSp = [NSString stringWithFormat:@"%ld",(long)[datenow timeIntervalSince1970]*1000];
+    
+    return timeSp;
 }
 @end

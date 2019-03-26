@@ -53,7 +53,7 @@
     [_arTool stopRecord];
     NSString * path = [_arTool audioRecordTypeToMP3:[_arTool getAudioFilePath:@"test.caf"] isDelSourceFile:NO];
     
-    [[NLOSSManage initOSSManage] uploadFilesForAliOSS:path];
+    [[NLOSSManage initOSSManage] uploadFilesForAliOSS:path savePath:@"video/1234567890"];
 }
 /*
 #pragma mark - Navigation

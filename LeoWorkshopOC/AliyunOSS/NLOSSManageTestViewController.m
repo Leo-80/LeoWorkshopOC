@@ -20,7 +20,8 @@
     // Do any additional setup after loading the view.
     
 //    [[NLOSSManage initOSSManage] downloadFileFromAliOSS];
-    [[NLOSSManage initOSSManage] uploadFilesForAliOSS:@"Users/leo/Documents/LeoWorkshopOC/LeoWorkshopOC/LrcParseTool/1553073016455.txt"];
+    
+    [[NLOSSManage initOSSManage] uploadFilesForAliOSS:@"/Users/leo/Documents/LeoWorkshopOC/LeoWorkshopOC/LrcParseTool/1553073016455.txt" savePath:@"video/1234567890"];
 }
 
 /*

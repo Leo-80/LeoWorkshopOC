@@ -13,7 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface NLOSSManage : NSObject
 + (instancetype)initOSSManage;
 - (void)downloadFileFromAliOSS;
-- (void)uploadFilesForAliOSS:(NSString *)filePath;
+- (void)uploadFilesForAliOSS:(NSString *)filePath savePath:(NSString *)sPath;
 @end
 
 NS_ASSUME_NONNULL_END
