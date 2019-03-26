@@ -7,4 +7,5 @@ target 'LeoWorkshopOC' do
     pod 'WeexSDK'
     pod 'Masonry'
     pod 'YYCategories'
+    pod 'AliyunOSSiOS'
 end

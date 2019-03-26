@@ -10,6 +10,9 @@
 #import "NLWeexViewController.h"
 #import "NLThreadExampleViewController.h"
 #import "NLLrcParseTestViewController.h"
+#import "NLOSSManageTestViewController.h"
+#import "NLAudioRecordToolTestViewController.h"
+
 
 @interface ViewController ()<UITableViewDataSource,UITableViewDelegate>
 
@@ -40,7 +43,7 @@
 }
 
 - (void)layoutView{
-    _dataList = [NSArray arrayWithObjects:@"weex example",@"NSThread NSOperation GCD",@"Lrc Parse",nil];
+    _dataList = [NSArray arrayWithObjects:@"weex example",@"NSThread NSOperation GCD",@"Lrc Parse",@"Ali Yun OSS Upload Download",@"Audio Record",nil];
     __weak __typeof(self) wself = self;
     [self.view addSubview:self.vcTableView];
     [self.vcTableView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -83,6 +86,16 @@
         case 2:{
             NLLrcParseTestViewController * LPTVC = [[NLLrcParseTestViewController alloc] init];
             [self.navigationController pushViewController:LPTVC animated:YES];
+        }
+            break;
+        case 3:{
+            NLOSSManageTestViewController * OMTVC = [[NLOSSManageTestViewController alloc] init];
+            [self.navigationController pushViewController:OMTVC animated:YES];
+        }
+            break;
+        case 4:{
+            NLAudioRecordToolTestViewController * ARTVC = [[NLAudioRecordToolTestViewController alloc] init];
+            [self.navigationController pushViewController:ARTVC animated:YES];
         }
             break;
         default:

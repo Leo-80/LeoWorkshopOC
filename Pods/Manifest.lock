@@ -1,4 +1,5 @@
 PODS:
+  - AliyunOSSiOS (2.10.7)
   - FLAnimatedImage (1.0.12)
   - Masonry (1.1.0)
   - SDWebImage/Core (4.3.3)
@@ -11,13 +12,15 @@ PODS:
   - YYCategories/no-arc (1.0.4)
 
 DEPENDENCIES:
+  - AliyunOSSiOS
   - Masonry
   - SDWebImage/GIF
   - WeexSDK
   - YYCategories
 
 SPEC REPOS:
-  https://github.com/CocoaPods/Specs.git:
+  https://github.com/cocoapods/specs.git:
+    - AliyunOSSiOS
     - FLAnimatedImage
     - Masonry
     - SDWebImage
@@ -25,12 +28,13 @@ SPEC REPOS:
     - YYCategories
 
 SPEC CHECKSUMS:
+  AliyunOSSiOS: 602b6a4e70e62a5f0a6431c20496343141d7e66f
   FLAnimatedImage: 4a0b56255d9b05f18b6dd7ee06871be5d3b89e31
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   SDWebImage: de4d90b5bff3571eae7bd16202b1f43135409fa5
   WeexSDK: ac56f255ce9a48e93ebc2e003956ab20da33321d
   YYCategories: 6bcd4314c6661a561410dce4a793379ebd306abd
 
-PODFILE CHECKSUM: ac34f95543350f6ecd81c1da4a53939d4e4fda5d
+PODFILE CHECKSUM: 15dbad36fc0eeafa851fa48325049bc76d2d7eb9
 
-COCOAPODS: 1.5.0
+COCOAPODS: 1.6.1

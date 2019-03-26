@@ -17,6 +17,9 @@
 		B332897B20B416330016FF3E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B332897A20B416330016FF3E /* main.m */; };
 		B332898520B416330016FF3E /* LeoWorkshopOCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B332898420B416330016FF3E /* LeoWorkshopOCTests.m */; };
 		B332899020B416330016FF3E /* LeoWorkshopOCUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B332898F20B416330016FF3E /* LeoWorkshopOCUITests.m */; };
+		B37C38B02248C65E00D847D1 /* NLAudioRecordTool.m in Sources */ = {isa = PBXBuildFile; fileRef = B37C38AF2248C65E00D847D1 /* NLAudioRecordTool.m */; };
+		B37C38B32248E11B00D847D1 /* NLAudioRecordToolTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B37C38B22248E11B00D847D1 /* NLAudioRecordToolTestViewController.m */; };
+		B37C38B722490F7100D847D1 /* libmp3lame.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B37C38B622490F7100D847D1 /* libmp3lame.a */; };
 		B3A00A9220B434E70019C5C2 /* NLWXEventModule.m in Sources */ = {isa = PBXBuildFile; fileRef = B3A00A8820B434E70019C5C2 /* NLWXEventModule.m */; };
 		B3A00A9320B434E70019C5C2 /* NLWXImageLoaderDefaultImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = B3A00A8920B434E70019C5C2 /* NLWXImageLoaderDefaultImpl.m */; };
 		B3A00A9420B434E70019C5C2 /* NLWXGifImageComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = B3A00A8A20B434E70019C5C2 /* NLWXGifImageComponent.m */; };
@@ -27,6 +30,11 @@
 		B3AA749C22472D2E005CAEC2 /* 1553152856148.txt in Resources */ = {isa = PBXBuildFile; fileRef = B3AA749822472D2E005CAEC2 /* 1553152856148.txt */; };
 		B3AA749F22472FA6005CAEC2 /* NLLrcParseTool.m in Sources */ = {isa = PBXBuildFile; fileRef = B3AA749E22472FA6005CAEC2 /* NLLrcParseTool.m */; };
 		B3AA74A222473024005CAEC2 /* NLLrcParseTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3AA74A122473024005CAEC2 /* NLLrcParseTestViewController.m */; };
+		B3AA74A622476285005CAEC2 /* NLOSSManage.m in Sources */ = {isa = PBXBuildFile; fileRef = B3AA74A522476285005CAEC2 /* NLOSSManage.m */; };
+		B3AA74A8224764E5005CAEC2 /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B3AA74A7224764E5005CAEC2 /* libresolv.tbd */; };
+		B3AA74AA224764F1005CAEC2 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3AA74A9224764F1005CAEC2 /* CoreTelephony.framework */; };
+		B3AA74AC224764FE005CAEC2 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3AA74AB224764FE005CAEC2 /* SystemConfiguration.framework */; };
+		B3AA74AF22476BF4005CAEC2 /* NLOSSManageTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3AA74AE22476BF4005CAEC2 /* NLOSSManageTestViewController.m */; };
 		B3E6EEF120C17B1C004489B0 /* NLThreadExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E6EEF020C17B1C004489B0 /* NLThreadExampleViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -68,6 +76,12 @@
 		B332898B20B416330016FF3E /* LeoWorkshopOCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LeoWorkshopOCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B332898F20B416330016FF3E /* LeoWorkshopOCUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LeoWorkshopOCUITests.m; sourceTree = "<group>"; };
 		B332899120B416330016FF3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B37C38AE2248C65E00D847D1 /* NLAudioRecordTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NLAudioRecordTool.h; sourceTree = "<group>"; };
+		B37C38AF2248C65E00D847D1 /* NLAudioRecordTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NLAudioRecordTool.m; sourceTree = "<group>"; };
+		B37C38B12248E11B00D847D1 /* NLAudioRecordToolTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NLAudioRecordToolTestViewController.h; sourceTree = "<group>"; };
+		B37C38B22248E11B00D847D1 /* NLAudioRecordToolTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NLAudioRecordToolTestViewController.m; sourceTree = "<group>"; };
+		B37C38B522490F7100D847D1 /* lame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lame.h; sourceTree = "<group>"; };
+		B37C38B622490F7100D847D1 /* libmp3lame.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libmp3lame.a; sourceTree = "<group>"; };
 		B3A00A8820B434E70019C5C2 /* NLWXEventModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NLWXEventModule.m; sourceTree = "<group>"; };
 		B3A00A8920B434E70019C5C2 /* NLWXImageLoaderDefaultImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NLWXImageLoaderDefaultImpl.m; sourceTree = "<group>"; };
 		B3A00A8A20B434E70019C5C2 /* NLWXGifImageComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NLWXGifImageComponent.m; sourceTree = "<group>"; };
@@ -85,6 +99,13 @@
 		B3AA749E22472FA6005CAEC2 /* NLLrcParseTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NLLrcParseTool.m; sourceTree = "<group>"; };
 		B3AA74A022473024005CAEC2 /* NLLrcParseTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NLLrcParseTestViewController.h; sourceTree = "<group>"; };
 		B3AA74A122473024005CAEC2 /* NLLrcParseTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NLLrcParseTestViewController.m; sourceTree = "<group>"; };
+		B3AA74A422476285005CAEC2 /* NLOSSManage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NLOSSManage.h; sourceTree = "<group>"; };
+		B3AA74A522476285005CAEC2 /* NLOSSManage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NLOSSManage.m; sourceTree = "<group>"; };
+		B3AA74A7224764E5005CAEC2 /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = usr/lib/libresolv.tbd; sourceTree = SDKROOT; };
+		B3AA74A9224764F1005CAEC2 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		B3AA74AB224764FE005CAEC2 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		B3AA74AD22476BF4005CAEC2 /* NLOSSManageTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NLOSSManageTestViewController.h; sourceTree = "<group>"; };
+		B3AA74AE22476BF4005CAEC2 /* NLOSSManageTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NLOSSManageTestViewController.m; sourceTree = "<group>"; };
 		B3E6EEEF20C17B1C004489B0 /* NLThreadExampleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NLThreadExampleViewController.h; sourceTree = "<group>"; };
 		B3E6EEF020C17B1C004489B0 /* NLThreadExampleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NLThreadExampleViewController.m; sourceTree = "<group>"; };
 		B3E6EEF420C17F8A004489B0 /* LeoWorkshopOC_PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeoWorkshopOC_PrefixHeader.pch; sourceTree = "<group>"; };
@@ -95,6 +116,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B37C38B722490F7100D847D1 /* libmp3lame.a in Frameworks */,
+				B3AA74AC224764FE005CAEC2 /* SystemConfiguration.framework in Frameworks */,
+				B3AA74AA224764F1005CAEC2 /* CoreTelephony.framework in Frameworks */,
+				B3AA74A8224764E5005CAEC2 /* libresolv.tbd in Frameworks */,
 				303234582AD5E652D141C85C /* libPods-LeoWorkshopOC.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -119,6 +144,9 @@
 		1D568AC42A71B7C92A39F8BC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B3AA74AB224764FE005CAEC2 /* SystemConfiguration.framework */,
+				B3AA74A9224764F1005CAEC2 /* CoreTelephony.framework */,
+				B3AA74A7224764E5005CAEC2 /* libresolv.tbd */,
 				8F65BD205403ECBD08068FF8 /* libPods-LeoWorkshopOC.a */,
 			);
 			name = Frameworks;
@@ -158,6 +186,8 @@
 		B332896720B416320016FF3E /* LeoWorkshopOC */ = {
 			isa = PBXGroup;
 			children = (
+				B37C38AA2248C3A600D847D1 /* AudioRecordTool */,
+				B3AA74A322476230005CAEC2 /* AliyunOSS */,
 				B3AA749522472D2E005CAEC2 /* LrcParseTool */,
 				B3E6EEEE20C17A8C004489B0 /* ThreadExample */,
 				B3A00A8720B434E70019C5C2 /* WeexExample */,
@@ -194,6 +224,27 @@
 			path = LeoWorkshopOCUITests;
 			sourceTree = "<group>";
 		};
+		B37C38AA2248C3A600D847D1 /* AudioRecordTool */ = {
+			isa = PBXGroup;
+			children = (
+				B37C38B422490F4F00D847D1 /* lameTool */,
+				B37C38AE2248C65E00D847D1 /* NLAudioRecordTool.h */,
+				B37C38AF2248C65E00D847D1 /* NLAudioRecordTool.m */,
+				B37C38B12248E11B00D847D1 /* NLAudioRecordToolTestViewController.h */,
+				B37C38B22248E11B00D847D1 /* NLAudioRecordToolTestViewController.m */,
+			);
+			path = AudioRecordTool;
+			sourceTree = "<group>";
+		};
+		B37C38B422490F4F00D847D1 /* lameTool */ = {
+			isa = PBXGroup;
+			children = (
+				B37C38B522490F7100D847D1 /* lame.h */,
+				B37C38B622490F7100D847D1 /* libmp3lame.a */,
+			);
+			path = lameTool;
+			sourceTree = "<group>";
+		};
 		B3A00A8720B434E70019C5C2 /* WeexExample */ = {
 			isa = PBXGroup;
 			children = (
@@ -223,6 +274,17 @@
 				B3AA74A122473024005CAEC2 /* NLLrcParseTestViewController.m */,
 			);
 			path = LrcParseTool;
+			sourceTree = "<group>";
+		};
+		B3AA74A322476230005CAEC2 /* AliyunOSS */ = {
+			isa = PBXGroup;
+			children = (
+				B3AA74A422476285005CAEC2 /* NLOSSManage.h */,
+				B3AA74A522476285005CAEC2 /* NLOSSManage.m */,
+				B3AA74AD22476BF4005CAEC2 /* NLOSSManageTestViewController.h */,
+				B3AA74AE22476BF4005CAEC2 /* NLOSSManageTestViewController.m */,
+			);
+			path = AliyunOSS;
 			sourceTree = "<group>";
 		};
 		B3E6EEEE20C17A8C004489B0 /* ThreadExample */ = {
@@ -390,7 +452,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-LeoWorkshopOC/Pods-LeoWorkshopOC-resources.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-LeoWorkshopOC/Pods-LeoWorkshopOC-resources.sh",
 				"${PODS_ROOT}/WeexSDK/pre-build/native-bundle-main.js",
 				"${PODS_ROOT}/WeexSDK/ios/sdk/WeexSDK/Resources/wx_load_error@3x.png",
 			);
@@ -401,7 +463,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LeoWorkshopOC/Pods-LeoWorkshopOC-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LeoWorkshopOC/Pods-LeoWorkshopOC-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -414,12 +476,16 @@
 				B3A00A9220B434E70019C5C2 /* NLWXEventModule.m in Sources */,
 				B332896D20B416320016FF3E /* ViewController.m in Sources */,
 				B332897320B416320016FF3E /* LeoWorkshopOC.xcdatamodeld in Sources */,
+				B3AA74AF22476BF4005CAEC2 /* NLOSSManageTestViewController.m in Sources */,
 				B3A00A9420B434E70019C5C2 /* NLWXGifImageComponent.m in Sources */,
 				B3A00A9620B434E70019C5C2 /* NLWeexViewController.m in Sources */,
+				B37C38B02248C65E00D847D1 /* NLAudioRecordTool.m in Sources */,
 				B3A00A9320B434E70019C5C2 /* NLWXImageLoaderDefaultImpl.m in Sources */,
+				B37C38B32248E11B00D847D1 /* NLAudioRecordToolTestViewController.m in Sources */,
 				B3AA749F22472FA6005CAEC2 /* NLLrcParseTool.m in Sources */,
 				B3A00A9520B434E70019C5C2 /* NLWeexSDKManager.m in Sources */,
 				B3E6EEF120C17B1C004489B0 /* NLThreadExampleViewController.m in Sources */,
+				B3AA74A622476285005CAEC2 /* NLOSSManage.m in Sources */,
 				B3AA74A222473024005CAEC2 /* NLLrcParseTestViewController.m in Sources */,
 				B332897B20B416330016FF3E /* main.m in Sources */,
 				B332896A20B416320016FF3E /* AppDelegate.m in Sources */,
@@ -593,13 +659,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 66HY7G99ZJ;
+				DEVELOPMENT_TEAM = 3QJ2Q6NGG4;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PRODUCT_NAME)/LeoWorkshopOC_PrefixHeader.pch";
 				INFOPLIST_FILE = LeoWorkshopOC/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/LeoWorkshopOC/AudioRecordTool/lameTool",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.leo.LeoWorkshopOC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -613,13 +683,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 66HY7G99ZJ;
+				DEVELOPMENT_TEAM = 3QJ2Q6NGG4;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PRODUCT_NAME)/LeoWorkshopOC_PrefixHeader.pch";
 				INFOPLIST_FILE = LeoWorkshopOC/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/LeoWorkshopOC/AudioRecordTool/lameTool",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.leo.LeoWorkshopOC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
