@@ -17,6 +17,8 @@
 		B332897B20B416330016FF3E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B332897A20B416330016FF3E /* main.m */; };
 		B332898520B416330016FF3E /* LeoWorkshopOCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B332898420B416330016FF3E /* LeoWorkshopOCTests.m */; };
 		B332899020B416330016FF3E /* LeoWorkshopOCUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B332898F20B416330016FF3E /* LeoWorkshopOCUITests.m */; };
+		B3524BD8224B4E89007B86BA /* NLMusicLyricScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3524BD7224B4E89007B86BA /* NLMusicLyricScrollViewController.m */; };
+		B3524BDB224B5EC6007B86BA /* NLPlayerTool.m in Sources */ = {isa = PBXBuildFile; fileRef = B3524BDA224B5EC6007B86BA /* NLPlayerTool.m */; };
 		B37C38B02248C65E00D847D1 /* NLAudioRecordTool.m in Sources */ = {isa = PBXBuildFile; fileRef = B37C38AF2248C65E00D847D1 /* NLAudioRecordTool.m */; };
 		B37C38B32248E11B00D847D1 /* NLAudioRecordToolTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B37C38B22248E11B00D847D1 /* NLAudioRecordToolTestViewController.m */; };
 		B37C38B722490F7100D847D1 /* libmp3lame.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B37C38B622490F7100D847D1 /* libmp3lame.a */; };
@@ -76,6 +78,10 @@
 		B332898B20B416330016FF3E /* LeoWorkshopOCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LeoWorkshopOCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B332898F20B416330016FF3E /* LeoWorkshopOCUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LeoWorkshopOCUITests.m; sourceTree = "<group>"; };
 		B332899120B416330016FF3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B3524BD6224B4E89007B86BA /* NLMusicLyricScrollViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NLMusicLyricScrollViewController.h; sourceTree = "<group>"; };
+		B3524BD7224B4E89007B86BA /* NLMusicLyricScrollViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NLMusicLyricScrollViewController.m; sourceTree = "<group>"; };
+		B3524BD9224B5EC6007B86BA /* NLPlayerTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NLPlayerTool.h; sourceTree = "<group>"; };
+		B3524BDA224B5EC6007B86BA /* NLPlayerTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NLPlayerTool.m; sourceTree = "<group>"; };
 		B37C38AE2248C65E00D847D1 /* NLAudioRecordTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NLAudioRecordTool.h; sourceTree = "<group>"; };
 		B37C38AF2248C65E00D847D1 /* NLAudioRecordTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NLAudioRecordTool.m; sourceTree = "<group>"; };
 		B37C38B12248E11B00D847D1 /* NLAudioRecordToolTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NLAudioRecordToolTestViewController.h; sourceTree = "<group>"; };
@@ -186,6 +192,7 @@
 		B332896720B416320016FF3E /* LeoWorkshopOC */ = {
 			isa = PBXGroup;
 			children = (
+				B3524BD5224B4C4D007B86BA /* Music+LyricScroll */,
 				B37C38AA2248C3A600D847D1 /* AudioRecordTool */,
 				B3AA74A322476230005CAEC2 /* AliyunOSS */,
 				B3AA749522472D2E005CAEC2 /* LrcParseTool */,
@@ -222,6 +229,17 @@
 				B332899120B416330016FF3E /* Info.plist */,
 			);
 			path = LeoWorkshopOCUITests;
+			sourceTree = "<group>";
+		};
+		B3524BD5224B4C4D007B86BA /* Music+LyricScroll */ = {
+			isa = PBXGroup;
+			children = (
+				B3524BD6224B4E89007B86BA /* NLMusicLyricScrollViewController.h */,
+				B3524BD7224B4E89007B86BA /* NLMusicLyricScrollViewController.m */,
+				B3524BD9224B5EC6007B86BA /* NLPlayerTool.h */,
+				B3524BDA224B5EC6007B86BA /* NLPlayerTool.m */,
+			);
+			path = "Music+LyricScroll";
 			sourceTree = "<group>";
 		};
 		B37C38AA2248C3A600D847D1 /* AudioRecordTool */ = {
@@ -480,12 +498,14 @@
 				B3A00A9420B434E70019C5C2 /* NLWXGifImageComponent.m in Sources */,
 				B3A00A9620B434E70019C5C2 /* NLWeexViewController.m in Sources */,
 				B37C38B02248C65E00D847D1 /* NLAudioRecordTool.m in Sources */,
+				B3524BD8224B4E89007B86BA /* NLMusicLyricScrollViewController.m in Sources */,
 				B3A00A9320B434E70019C5C2 /* NLWXImageLoaderDefaultImpl.m in Sources */,
 				B37C38B32248E11B00D847D1 /* NLAudioRecordToolTestViewController.m in Sources */,
 				B3AA749F22472FA6005CAEC2 /* NLLrcParseTool.m in Sources */,
 				B3A00A9520B434E70019C5C2 /* NLWeexSDKManager.m in Sources */,
 				B3E6EEF120C17B1C004489B0 /* NLThreadExampleViewController.m in Sources */,
 				B3AA74A622476285005CAEC2 /* NLOSSManage.m in Sources */,
+				B3524BDB224B5EC6007B86BA /* NLPlayerTool.m in Sources */,
 				B3AA74A222473024005CAEC2 /* NLLrcParseTestViewController.m in Sources */,
 				B332897B20B416330016FF3E /* main.m in Sources */,
 				B332896A20B416320016FF3E /* AppDelegate.m in Sources */,

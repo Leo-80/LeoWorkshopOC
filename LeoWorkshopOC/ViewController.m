@@ -12,7 +12,7 @@
 #import "NLLrcParseTestViewController.h"
 #import "NLOSSManageTestViewController.h"
 #import "NLAudioRecordToolTestViewController.h"
-
+#import "NLMusicLyricScrollViewController.h"
 
 @interface ViewController ()<UITableViewDataSource,UITableViewDelegate>
 
@@ -43,7 +43,7 @@
 }
 
 - (void)layoutView{
-    _dataList = [NSArray arrayWithObjects:@"weex example",@"NSThread NSOperation GCD",@"Lrc Parse",@"Ali Yun OSS Upload Download",@"Audio Record",nil];
+    _dataList = [NSArray arrayWithObjects:@"weex example",@"NSThread NSOperation GCD",@"Lrc Parse",@"Ali Yun OSS Upload Download",@"Audio Record",@"Music Lyric Scroll",nil];
     __weak __typeof(self) wself = self;
     [self.view addSubview:self.vcTableView];
     [self.vcTableView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -96,6 +96,11 @@
         case 4:{
             NLAudioRecordToolTestViewController * ARTVC = [[NLAudioRecordToolTestViewController alloc] init];
             [self.navigationController pushViewController:ARTVC animated:YES];
+        }
+            break;
+        case 5:{
+            NLMusicLyricScrollViewController * MLSVC = [[NLMusicLyricScrollViewController alloc] init];
+            [self.navigationController pushViewController:MLSVC animated:YES];
         }
             break;
         default:
