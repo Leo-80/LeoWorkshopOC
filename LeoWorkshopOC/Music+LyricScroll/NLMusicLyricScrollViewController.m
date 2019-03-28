@@ -85,7 +85,7 @@
 - (void)disPlayLyric:(NSTimeInterval)currentTime{
    
     
-        for (int i = _currentRow ; i < _lrcObjects.count; i++) {
+        for (NSInteger i = _currentRow ; i < _lrcObjects.count; i++) {
             LrcObject * lrcOb = _lrcObjects[i];
             if (currentTime > [lrcOb.lrcTime floatValue]) {
                 _currentRow = i;
