@@ -40,8 +40,7 @@
     _lrcObjects= [[NLLrcParseTool initLrcParseTool] lrcToolWithLrcFile:@"1553152856148" FileType:@"txt"];
     [self layoutView];
     
-    [self palyMusic];
-
+    [self initMusic];
     
 }
 
@@ -55,14 +54,22 @@
     [playBtn addTarget:self action:@selector(playMusic) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:playBtn];
     
+    UIButton * igniteBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    igniteBtn.frame = CGRectMake(50.0f, 650.0f, 100.0f, 50.0f);
+    [igniteBtn setTitle:@"燃点播放" forState:UIControlStateNormal];
+    [igniteBtn setTitleColor:[UIColor greenColor] forState:UIControlStateNormal];
+    [igniteBtn addTarget:self action:@selector(ignitePlayAction) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:igniteBtn];
 }
 
-- (void)palyMusic{
+
+- (void)initMusic{
     
     NSURL * mUrl = [NSURL URLWithString:@"https://music.hzweimo.com/20190321/Sw0DAFULdtuAEg4jAEA9tW64BJY812.mp3"];
     AVPlayerItem * mItem = [AVPlayerItem playerItemWithURL:mUrl];
     _player = [[AVPlayer alloc] initWithPlayerItem:mItem];
     [mItem addObserver:self forKeyPath:@"status" options:NSKeyValueObservingOptionNew context:nil];
+    
     __weak typeof(self)wSelf = self;
     [_player addPeriodicTimeObserverForInterval:CMTimeMakeWithSeconds(1, NSEC_PER_SEC) queue:NULL usingBlock:^(CMTime time) {
         
@@ -72,10 +79,12 @@
     }];
     
 }
-
+- (void)ignitePlayAction{
+    [self seekToPlayTime:180.0f];
+}
 - (void)disPlayLyric:(NSTimeInterval)currentTime{
    
-        
+    
         for (int i = _currentRow ; i < _lrcObjects.count; i++) {
             LrcObject * lrcOb = _lrcObjects[i];
             if (currentTime > [lrcOb.lrcTime floatValue]) {
@@ -91,10 +100,23 @@
      if (_lrcObjects.count - _currentRow > 8) {
         [_musicTableView scrollToRowAtIndexPath:[NSIndexPath indexPathForRow:_currentRow inSection:0] atScrollPosition:UITableViewScrollPositionMiddle animated:YES];
     }
+    
+}
+
+- (void)seekToPlayTime:(NSTimeInterval)startTime{
+    CMTime cTime = CMTimeMake(startTime, 1);
+    __weak typeof(self)wSelf = self;
+    [_player seekToTime:cTime toleranceBefore:kCMTimeZero toleranceAfter:kCMTimeZero completionHandler:^(BOOL finished) {
+        if (finished) {
+            [wSelf.player play];
+        }
+    }];
 }
 
 - (void)playMusic{
+    
     [_player play];
+    
 }
 #pragma mark AVPlayer KVO
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context{

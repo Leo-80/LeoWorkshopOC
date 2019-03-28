@@ -19,6 +19,7 @@
 		B332899020B416330016FF3E /* LeoWorkshopOCUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B332898F20B416330016FF3E /* LeoWorkshopOCUITests.m */; };
 		B3524BD8224B4E89007B86BA /* NLMusicLyricScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3524BD7224B4E89007B86BA /* NLMusicLyricScrollViewController.m */; };
 		B3524BDB224B5EC6007B86BA /* NLPlayerTool.m in Sources */ = {isa = PBXBuildFile; fileRef = B3524BDA224B5EC6007B86BA /* NLPlayerTool.m */; };
+		B3524BDE224CB4CE007B86BA /* NLTouchTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = B3524BDD224CB4CE007B86BA /* NLTouchTableView.m */; };
 		B37C38B02248C65E00D847D1 /* NLAudioRecordTool.m in Sources */ = {isa = PBXBuildFile; fileRef = B37C38AF2248C65E00D847D1 /* NLAudioRecordTool.m */; };
 		B37C38B32248E11B00D847D1 /* NLAudioRecordToolTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B37C38B22248E11B00D847D1 /* NLAudioRecordToolTestViewController.m */; };
 		B37C38B722490F7100D847D1 /* libmp3lame.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B37C38B622490F7100D847D1 /* libmp3lame.a */; };
@@ -82,6 +83,8 @@
 		B3524BD7224B4E89007B86BA /* NLMusicLyricScrollViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NLMusicLyricScrollViewController.m; sourceTree = "<group>"; };
 		B3524BD9224B5EC6007B86BA /* NLPlayerTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NLPlayerTool.h; sourceTree = "<group>"; };
 		B3524BDA224B5EC6007B86BA /* NLPlayerTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NLPlayerTool.m; sourceTree = "<group>"; };
+		B3524BDC224CB4CE007B86BA /* NLTouchTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NLTouchTableView.h; sourceTree = "<group>"; };
+		B3524BDD224CB4CE007B86BA /* NLTouchTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NLTouchTableView.m; sourceTree = "<group>"; };
 		B37C38AE2248C65E00D847D1 /* NLAudioRecordTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NLAudioRecordTool.h; sourceTree = "<group>"; };
 		B37C38AF2248C65E00D847D1 /* NLAudioRecordTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NLAudioRecordTool.m; sourceTree = "<group>"; };
 		B37C38B12248E11B00D847D1 /* NLAudioRecordToolTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NLAudioRecordToolTestViewController.h; sourceTree = "<group>"; };
@@ -238,6 +241,8 @@
 				B3524BD7224B4E89007B86BA /* NLMusicLyricScrollViewController.m */,
 				B3524BD9224B5EC6007B86BA /* NLPlayerTool.h */,
 				B3524BDA224B5EC6007B86BA /* NLPlayerTool.m */,
+				B3524BDC224CB4CE007B86BA /* NLTouchTableView.h */,
+				B3524BDD224CB4CE007B86BA /* NLTouchTableView.m */,
 			);
 			path = "Music+LyricScroll";
 			sourceTree = "<group>";
@@ -501,6 +506,7 @@
 				B3524BD8224B4E89007B86BA /* NLMusicLyricScrollViewController.m in Sources */,
 				B3A00A9320B434E70019C5C2 /* NLWXImageLoaderDefaultImpl.m in Sources */,
 				B37C38B32248E11B00D847D1 /* NLAudioRecordToolTestViewController.m in Sources */,
+				B3524BDE224CB4CE007B86BA /* NLTouchTableView.m in Sources */,
 				B3AA749F22472FA6005CAEC2 /* NLLrcParseTool.m in Sources */,
 				B3A00A9520B434E70019C5C2 /* NLWeexSDKManager.m in Sources */,
 				B3E6EEF120C17B1C004489B0 /* NLThreadExampleViewController.m in Sources */,
