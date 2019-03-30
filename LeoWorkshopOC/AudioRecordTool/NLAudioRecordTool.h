@@ -12,12 +12,16 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface NLAudioRecordTool : NSObject
 + (instancetype)initAudioRecorderTool;
-- (NSString *)getAudioFilePath:(NSString *)fileName;
 - (void)initAudioRecord:(NSString *)fileName;
+- (NSString *)getAudioFilePath:(NSString *)fileName;
 - (void)prepareRecord;
 - (void)beginRecord;
 - (void)stopRecord;
 - (NSString *)audioRecordTypeToMP3:(NSString *)filePath isDelSourceFile:(BOOL)isDel;
+- (void)playRecord:(NSString *)rPath;
+- (void)pausePlayRecord;
+- (void)stopPlayRecord;
+
 @end
 
 NS_ASSUME_NONNULL_END

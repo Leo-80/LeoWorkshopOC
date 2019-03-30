@@ -14,6 +14,7 @@
 
 @interface NLAudioRecordTool ()
 @property (nonatomic, strong) AVAudioRecorder * audioRecorder;
+@property (nonatomic, strong) AVAudioPlayer * audioPlayer;
 @end
 
 @implementation NLAudioRecordTool
@@ -55,14 +56,22 @@ static NLAudioRecordTool * audioRecordTool = nil;
     return url;
 }
 - (NSString *)getAudioFilePath:(NSString *)fileName{
+    
     NSString *path = [[NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) lastObject] stringByAppendingPathComponent:fileName];
+    
+    NSFileManager *fm = [NSFileManager defaultManager];
+    if (![fm fileExistsAtPath:path]) {
+        return nil;
+    }
+    
     return path;
 }
 - (void)initAudioRecord:(NSString *)fileName{
     
     NSDictionary * recordSettings = @{AVFormatIDKey:@(kAudioFormatLinearPCM),AVSampleRateKey:@(11025.0),AVNumberOfChannelsKey:@(2),AVEncoderAudioQualityKey:@(AVAudioQualityMin)};
-    
-    self.audioRecorder = [[AVAudioRecorder alloc] initWithURL:[self setSavePath:fileName] settings:recordSettings error:nil];
+    if (!_audioRecorder) {
+        self.audioRecorder = [[AVAudioRecorder alloc] initWithURL:[self setSavePath:fileName] settings:recordSettings error:nil];
+    }
 }
 
 - (void)prepareRecord{
@@ -140,6 +149,23 @@ static NLAudioRecordTool * audioRecordTool = nil;
         }
         return outPath;
     }
+}
+
+- (void)playRecord:(NSString *)rPath{
+    
+    if (rPath && !_audioPlayer) {
+        NSURL * recordUrl = [NSURL fileURLWithPath:rPath];
+        _audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:recordUrl error:nil];
+    }
+    [_audioPlayer prepareToPlay];
+    [_audioPlayer play];
+}
+
+- (void)pausePlayRecord{
+    [_audioPlayer pause];
+}
+- (void)stopPlayRecord{
+    [_audioPlayer stop];
 }
 @end
 

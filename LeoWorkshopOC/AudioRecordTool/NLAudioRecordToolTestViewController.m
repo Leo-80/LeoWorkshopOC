@@ -12,6 +12,7 @@
 
 @interface NLAudioRecordToolTestViewController ()
 @property (nonatomic, strong) NLAudioRecordTool * arTool;
+@property (nonatomic, strong) NSString * recordPath;
 @end
 
 @implementation NLAudioRecordToolTestViewController
@@ -42,6 +43,20 @@
     [stopRecordBtn setTitleColor:[UIColor greenColor] forState:UIControlStateNormal];
     [stopRecordBtn addTarget:self action:@selector(stopRecordAction) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:stopRecordBtn];
+    
+    UIButton * playRecordBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    playRecordBtn.frame = CGRectMake(50.0f, 250.0f, 100.0f, 50.0f);
+    [playRecordBtn setTitle:@"播放录音" forState:UIControlStateNormal];
+    [playRecordBtn setTitleColor:[UIColor greenColor] forState:UIControlStateNormal];
+    [playRecordBtn addTarget:self action:@selector(playRecordAction) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:playRecordBtn];
+    
+    UIButton * stopPlayRecordBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    stopPlayRecordBtn.frame = CGRectMake(50.0f, 300.0f, 100.0f, 50.0f);
+    [stopPlayRecordBtn setTitle:@"停止播放录音" forState:UIControlStateNormal];
+    [stopPlayRecordBtn setTitleColor:[UIColor greenColor] forState:UIControlStateNormal];
+    [stopPlayRecordBtn addTarget:self action:@selector(stopPlayRecordAction) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:stopPlayRecordBtn];
 }
 
 - (void)beginRecordAction{
@@ -51,10 +66,17 @@
 
 - (void)stopRecordAction{
     [_arTool stopRecord];
-    NSString * path = [_arTool audioRecordTypeToMP3:[_arTool getAudioFilePath:@"test.caf"] isDelSourceFile:NO];
+    _recordPath = [_arTool audioRecordTypeToMP3:[_arTool getAudioFilePath:@"test.caf"] isDelSourceFile:NO];
     
-    [[NLOSSManage initOSSManage] uploadFilesForAliOSS:path savePath:@"video/1234567890"];
+//    [[NLOSSManage initOSSManage] uploadFilesForAliOSS:_recordPath savePath:@"video/1234567890"];
 }
+- (void)playRecordAction{
+    [_arTool playRecord:_recordPath];
+}
+- (void)stopPlayRecordAction{
+     [_arTool stopPlayRecord];
+}
+
 /*
 #pragma mark - Navigation
 
