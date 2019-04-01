@@ -77,7 +77,7 @@ static NLLrcParseTool * lrcParseTool = nil;
 - (NSDictionary *)lrcHeadDict:(NSArray *)lrcArray {
     
     NSMutableDictionary * dict = [NSMutableDictionary dictionary];
-    NSDictionary * sDict = [self splitLrcArray:lrcArray];
+    NSDictionary * sDict = [self splitLrcArray:lrcArray isHead:YES];
     if (sDict.count > 0) {
         NSArray * headLrcArr = [sDict objectForKey:@"sLrcArray"];
         [dict setObject:headLrcArr forKey:@"headArray"];
@@ -95,10 +95,10 @@ static NLLrcParseTool * lrcParseTool = nil;
  @return 中部歌词数组
  */
 - (NSMutableArray *)lrcMiddleArray:(NSArray *)lrcArray HeadIndex:(NSNumber *)hIndex  EndIndex:(NSNumber *)eIndex{
-    NSMutableArray * lrcMiddleArr = [NSMutableArray array];
+    NSMutableArray * lrcMiddleArr;
     if (lrcArray.count > 0) {
         NSIndexSet * indexSet = [NSIndexSet indexSetWithIndexesInRange:NSMakeRange([hIndex intValue]+1, lrcArray.count -[hIndex intValue]-[eIndex intValue]-2)];
-        lrcMiddleArr = (NSMutableArray *)[lrcArray objectsAtIndexes:indexSet];
+        lrcMiddleArr = [NSMutableArray arrayWithArray:[lrcArray objectsAtIndexes:indexSet]];
     }
     return lrcMiddleArr;
 }
@@ -114,7 +114,7 @@ static NLLrcParseTool * lrcParseTool = nil;
     NSMutableDictionary * dict = [NSMutableDictionary dictionary];
     
     NSArray * lrcReverseArr = [[lrcArray reverseObjectEnumerator] allObjects];
-    NSDictionary * sDict = [self splitLrcArray:lrcReverseArr];
+    NSDictionary * sDict = [self splitLrcArray:lrcReverseArr isHead:NO];
     if (sDict.count > 0) {
         NSArray * endLrcArr = [sDict objectForKey:@"sLrcArray"];
         [dict setObject:endLrcArr forKey:@"endArray"];
@@ -129,7 +129,7 @@ static NLLrcParseTool * lrcParseTool = nil;
  @param lrcArray 歌词数组
  @return sLrcArray 歌词数组 [00:00.00]xxx index
  */
-- (NSDictionary *)splitLrcArray:(NSArray *)lrcArray{
+- (NSDictionary *)splitLrcArray:(NSArray *)lrcArray isHead:(BOOL)ishead{
     
     NSMutableDictionary * dict = [NSMutableDictionary dictionary];
     NSNumber * index = nil;
@@ -141,10 +141,11 @@ static NLLrcParseTool * lrcParseTool = nil;
         if (i < lrcArray.count -1) {
             nxetLrcLineString = [lrcArray objectAtIndex:i+1];
         }
-        if ([lrcLineString rangeOfString:@"["].location != NSNotFound) {
+        NSLog(@"splitLrcArray lrcLineString : %@",lrcLineString);
+        if (lrcLineString.length > 10 &&[lrcLineString rangeOfString:@"["].location != NSNotFound) {
             NSString * lrcStr = [lrcLineString substringFromIndex:10];
             NSString * nextLrcStr = nil;
-            if ([nxetLrcLineString length]>0) {
+            if ([nxetLrcLineString length]>10) {
                 nextLrcStr = [nxetLrcLineString substringFromIndex:10];
             }
             
@@ -154,12 +155,16 @@ static NLLrcParseTool * lrcParseTool = nil;
                     index = [NSNumber numberWithInt:i];
                     [sLrcArray addObject:lrcLineString];
                 }else{
+                    index = [NSNumber numberWithInt:i];
+                    [sLrcArray addObject:lrcLineString];
                     break;
                 }
+            }else if(!ishead){
+                break;
             }
         }else{
             NSLog(@"music lrc music error");
-            return nil;
+            continue;
         }
         
     }
@@ -207,7 +212,7 @@ static NLLrcParseTool * lrcParseTool = nil;
         }
     }
     if (pEndLrcs.count > 0) {
-        [lrcMiddleArrary addObjectsFromArray:pEndLrcs];
+        [lrcMiddleArrary addObjectsFromArray:(NSArray *)pEndLrcs];
     }
     NSArray * headLrcs = [headLrcDict objectForKey:@"headArray"];
     NSMutableArray * pHeadLrcs = [NSMutableArray array];
@@ -272,7 +277,7 @@ static NLLrcParseTool * lrcParseTool = nil;
     
     for (NSString *lrcLineString in lrcLines) {
         
-        if ([lrcLineString rangeOfString:@"["].location != NSNotFound) {
+        if (lrcLineString.length > 10 && [lrcLineString rangeOfString:@"["].location != NSNotFound) {
             
             LrcObject * lrcOb = [[LrcObject alloc] init];
             
@@ -308,7 +313,7 @@ static NLLrcParseTool * lrcParseTool = nil;
             [lrcObjectArray addObject:lrcOb];
         }else{
             NSLog(@"music lrc form error");
-            return nil;
+            continue;
         }
     }
     return lrcObjectArray;
