@@ -29,6 +29,8 @@
 		B3A00A9520B434E70019C5C2 /* NLWeexSDKManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B3A00A8C20B434E70019C5C2 /* NLWeexSDKManager.m */; };
 		B3A00A9620B434E70019C5C2 /* NLWeexViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3A00A9020B434E70019C5C2 /* NLWeexViewController.m */; };
 		B3A00AA020B588C60019C5C2 /* index.native.js in Resources */ = {isa = PBXBuildFile; fileRef = B3A00A9F20B588C60019C5C2 /* index.native.js */; };
+		B3A566A62252089300BEEE84 /* 1544888229409284.txt in Resources */ = {isa = PBXBuildFile; fileRef = B3A566A52252089300BEEE84 /* 1544888229409284.txt */; };
+		B3A566A8225209D100BEEE84 /* 1553073016455_a.txt in Resources */ = {isa = PBXBuildFile; fileRef = B3A566A7225209D100BEEE84 /* 1553073016455_a.txt */; };
 		B3AA749B22472D2E005CAEC2 /* 1553073016455.txt in Resources */ = {isa = PBXBuildFile; fileRef = B3AA749722472D2E005CAEC2 /* 1553073016455.txt */; };
 		B3AA749C22472D2E005CAEC2 /* 1553152856148.txt in Resources */ = {isa = PBXBuildFile; fileRef = B3AA749822472D2E005CAEC2 /* 1553152856148.txt */; };
 		B3AA749F22472FA6005CAEC2 /* NLLrcParseTool.m in Sources */ = {isa = PBXBuildFile; fileRef = B3AA749E22472FA6005CAEC2 /* NLLrcParseTool.m */; };
@@ -102,6 +104,8 @@
 		B3A00A9020B434E70019C5C2 /* NLWeexViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NLWeexViewController.m; sourceTree = "<group>"; };
 		B3A00A9120B434E70019C5C2 /* NLWeexSDKManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NLWeexSDKManager.h; sourceTree = "<group>"; };
 		B3A00A9F20B588C60019C5C2 /* index.native.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = index.native.js; sourceTree = "<group>"; };
+		B3A566A52252089300BEEE84 /* 1544888229409284.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 1544888229409284.txt; sourceTree = "<group>"; };
+		B3A566A7225209D100BEEE84 /* 1553073016455_a.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 1553073016455_a.txt; sourceTree = "<group>"; };
 		B3AA749722472D2E005CAEC2 /* 1553073016455.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 1553073016455.txt; sourceTree = "<group>"; };
 		B3AA749822472D2E005CAEC2 /* 1553152856148.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 1553152856148.txt; sourceTree = "<group>"; };
 		B3AA749D22472FA6005CAEC2 /* NLLrcParseTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NLLrcParseTool.h; sourceTree = "<group>"; };
@@ -289,6 +293,8 @@
 		B3AA749522472D2E005CAEC2 /* LrcParseTool */ = {
 			isa = PBXGroup;
 			children = (
+				B3A566A7225209D100BEEE84 /* 1553073016455_a.txt */,
+				B3A566A52252089300BEEE84 /* 1544888229409284.txt */,
 				B3AA749722472D2E005CAEC2 /* 1553073016455.txt */,
 				B3AA749822472D2E005CAEC2 /* 1553152856148.txt */,
 				B3AA749D22472FA6005CAEC2 /* NLLrcParseTool.h */,
@@ -429,7 +435,9 @@
 				B3AA749C22472D2E005CAEC2 /* 1553152856148.txt in Resources */,
 				B332897520B416330016FF3E /* Assets.xcassets in Resources */,
 				B332897020B416320016FF3E /* Main.storyboard in Resources */,
+				B3A566A62252089300BEEE84 /* 1544888229409284.txt in Resources */,
 				B3AA749B22472D2E005CAEC2 /* 1553073016455.txt in Resources */,
+				B3A566A8225209D100BEEE84 /* 1553073016455_a.txt in Resources */,
 				B3A00AA020B588C60019C5C2 /* index.native.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

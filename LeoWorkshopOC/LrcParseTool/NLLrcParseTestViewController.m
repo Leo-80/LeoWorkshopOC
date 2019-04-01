@@ -20,7 +20,7 @@
     // Do any additional setup after loading the view.
     [self.view addSubview:self.lrcTextView];
     NSMutableString * lrcAllStr = [NSMutableString string];
-    NSArray * lrcObjects = [[NLLrcParseTool initLrcParseTool] lrcToolWithLrcFile:@"1553152856148" FileType:@"txt"];
+    NSArray * lrcObjects = [[NLLrcParseTool initLrcParseTool] lrcToolWithLrcFile:@"1544888229409284" FileType:@"txt"];
     NSLog(@"lrcObjects : %@",lrcObjects);
     for (LrcObject * lrcOb in lrcObjects) {
         [lrcAllStr appendString:lrcOb.lrcStr];

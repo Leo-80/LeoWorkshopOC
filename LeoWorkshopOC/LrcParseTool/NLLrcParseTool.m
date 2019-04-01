@@ -141,7 +141,7 @@ static NLLrcParseTool * lrcParseTool = nil;
         if (i < lrcArray.count -1) {
             nxetLrcLineString = [lrcArray objectAtIndex:i+1];
         }
-        if ([lrcLineString length] > 0) {
+        if ([lrcLineString rangeOfString:@"["].location != NSNotFound) {
             NSString * lrcStr = [lrcLineString substringFromIndex:10];
             NSString * nextLrcStr = nil;
             if ([nxetLrcLineString length]>0) {
@@ -157,6 +157,9 @@ static NLLrcParseTool * lrcParseTool = nil;
                     break;
                 }
             }
+        }else{
+            NSLog(@"music lrc music error");
+            return nil;
         }
         
     }
@@ -180,6 +183,7 @@ static NLLrcParseTool * lrcParseTool = nil;
     NSArray *lrcLines = [lrcString componentsSeparatedByString:@"\n"];
     NSDictionary * headLrcDict = [self lrcHeadDict:lrcLines];
     NSDictionary * endLrcDict = [self lrcEndDict:lrcLines];
+    
     NSMutableArray * lrcMiddleArrary = [self lrcMiddleArray:lrcLines HeadIndex:[headLrcDict objectForKey:@"headIndex"] EndIndex:[endLrcDict objectForKey:@"endIndex"]];
     
     NSArray * endLrcs = [endLrcDict objectForKey:@"endArray"];
@@ -268,7 +272,7 @@ static NLLrcParseTool * lrcParseTool = nil;
     
     for (NSString *lrcLineString in lrcLines) {
         
-        if ([lrcLineString length] > 0) {
+        if ([lrcLineString rangeOfString:@"["].location != NSNotFound) {
             
             LrcObject * lrcOb = [[LrcObject alloc] init];
             
@@ -302,6 +306,9 @@ static NLLrcParseTool * lrcParseTool = nil;
                 //                    }
             }
             [lrcObjectArray addObject:lrcOb];
+        }else{
+            NSLog(@"music lrc form error");
+            return nil;
         }
     }
     return lrcObjectArray;
