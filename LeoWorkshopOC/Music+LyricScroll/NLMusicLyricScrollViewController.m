@@ -10,6 +10,7 @@
 #import "NLLrcParseTool.h"
 #import <AVFoundation/AVFoundation.h>
 
+
 @interface NLMusicLyricScrollViewController () <UITableViewDataSource,UITableViewDelegate>
 @property (nonatomic, strong) UITableView * musicTableView;
 @property (nonatomic, strong) NSArray * lrcObjects;
@@ -39,7 +40,6 @@
     
     _lrcObjects= [[NLLrcParseTool initLrcParseTool] lrcToolWithLrcFile:@"1553152856148" FileType:@"txt"];
     [self layoutView];
-    
     [self initMusic];
     
 }

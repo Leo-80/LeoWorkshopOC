@@ -52,7 +52,7 @@
     [self.view addSubview:playRecordBtn];
     
     UIButton * stopPlayRecordBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    stopPlayRecordBtn.frame = CGRectMake(50.0f, 300.0f, 100.0f, 50.0f);
+    stopPlayRecordBtn.frame = CGRectMake(50.0f, 300.0f, 150.0f, 50.0f);
     [stopPlayRecordBtn setTitle:@"停止播放录音" forState:UIControlStateNormal];
     [stopPlayRecordBtn setTitleColor:[UIColor greenColor] forState:UIControlStateNormal];
     [stopPlayRecordBtn addTarget:self action:@selector(stopPlayRecordAction) forControlEvents:UIControlEventTouchUpInside];
@@ -60,20 +60,24 @@
 }
 
 - (void)beginRecordAction{
-     [_arTool beginRecord];
+    NSLog(@"开始录音");
      [_arTool prepareRecord];
+     [_arTool beginRecord];
 }
 
 - (void)stopRecordAction{
+    NSLog(@"结束录音");
     [_arTool stopRecord];
     _recordPath = [_arTool audioRecordTypeToMP3:[_arTool getAudioFilePath:@"test.caf"] isDelSourceFile:NO];
     
 //    [[NLOSSManage initOSSManage] uploadFilesForAliOSS:_recordPath savePath:@"video/1234567890"];
 }
 - (void)playRecordAction{
+    NSLog(@"播放录音");
     [_arTool playRecord:_recordPath];
 }
 - (void)stopPlayRecordAction{
+    NSLog(@"停止播放录音");
      [_arTool stopPlayRecord];
 }
 

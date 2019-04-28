@@ -41,6 +41,7 @@
 		B3AA74AA224764F1005CAEC2 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3AA74A9224764F1005CAEC2 /* CoreTelephony.framework */; };
 		B3AA74AC224764FE005CAEC2 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3AA74AB224764FE005CAEC2 /* SystemConfiguration.framework */; };
 		B3AA74AF22476BF4005CAEC2 /* NLOSSManageTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3AA74AE22476BF4005CAEC2 /* NLOSSManageTestViewController.m */; };
+		B3DE2BC8226F331800926FA9 /* NLPlayerTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3DE2BC7226F331800926FA9 /* NLPlayerTestViewController.m */; };
 		B3E6EEF120C17B1C004489B0 /* NLThreadExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E6EEF020C17B1C004489B0 /* NLThreadExampleViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -121,6 +122,8 @@
 		B3AA74AB224764FE005CAEC2 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		B3AA74AD22476BF4005CAEC2 /* NLOSSManageTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NLOSSManageTestViewController.h; sourceTree = "<group>"; };
 		B3AA74AE22476BF4005CAEC2 /* NLOSSManageTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NLOSSManageTestViewController.m; sourceTree = "<group>"; };
+		B3DE2BC6226F331800926FA9 /* NLPlayerTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NLPlayerTestViewController.h; sourceTree = "<group>"; };
+		B3DE2BC7226F331800926FA9 /* NLPlayerTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NLPlayerTestViewController.m; sourceTree = "<group>"; };
 		B3E6EEEF20C17B1C004489B0 /* NLThreadExampleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NLThreadExampleViewController.h; sourceTree = "<group>"; };
 		B3E6EEF020C17B1C004489B0 /* NLThreadExampleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NLThreadExampleViewController.m; sourceTree = "<group>"; };
 		B3E6EEF420C17F8A004489B0 /* LeoWorkshopOC_PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeoWorkshopOC_PrefixHeader.pch; sourceTree = "<group>"; };
@@ -201,6 +204,7 @@
 		B332896720B416320016FF3E /* LeoWorkshopOC */ = {
 			isa = PBXGroup;
 			children = (
+				B3DE2BC5226F324400926FA9 /* AvPlayerTool */,
 				B3524BD5224B4C4D007B86BA /* Music+LyricScroll */,
 				B37C38AA2248C3A600D847D1 /* AudioRecordTool */,
 				B3AA74A322476230005CAEC2 /* AliyunOSS */,
@@ -245,8 +249,6 @@
 			children = (
 				B3524BD6224B4E89007B86BA /* NLMusicLyricScrollViewController.h */,
 				B3524BD7224B4E89007B86BA /* NLMusicLyricScrollViewController.m */,
-				B3524BD9224B5EC6007B86BA /* NLPlayerTool.h */,
-				B3524BDA224B5EC6007B86BA /* NLPlayerTool.m */,
 				B3524BDC224CB4CE007B86BA /* NLTouchTableView.h */,
 				B3524BDD224CB4CE007B86BA /* NLTouchTableView.m */,
 			);
@@ -317,6 +319,17 @@
 				B3AA74AE22476BF4005CAEC2 /* NLOSSManageTestViewController.m */,
 			);
 			path = AliyunOSS;
+			sourceTree = "<group>";
+		};
+		B3DE2BC5226F324400926FA9 /* AvPlayerTool */ = {
+			isa = PBXGroup;
+			children = (
+				B3524BD9224B5EC6007B86BA /* NLPlayerTool.h */,
+				B3524BDA224B5EC6007B86BA /* NLPlayerTool.m */,
+				B3DE2BC6226F331800926FA9 /* NLPlayerTestViewController.h */,
+				B3DE2BC7226F331800926FA9 /* NLPlayerTestViewController.m */,
+			);
+			path = AvPlayerTool;
 			sourceTree = "<group>";
 		};
 		B3E6EEEE20C17A8C004489B0 /* ThreadExample */ = {
@@ -517,6 +530,7 @@
 				B37C38B02248C65E00D847D1 /* NLAudioRecordTool.m in Sources */,
 				B3524BD8224B4E89007B86BA /* NLMusicLyricScrollViewController.m in Sources */,
 				B3A00A9320B434E70019C5C2 /* NLWXImageLoaderDefaultImpl.m in Sources */,
+				B3DE2BC8226F331800926FA9 /* NLPlayerTestViewController.m in Sources */,
 				B37C38B32248E11B00D847D1 /* NLAudioRecordToolTestViewController.m in Sources */,
 				B3524BDE224CB4CE007B86BA /* NLTouchTableView.m in Sources */,
 				B3AA749F22472FA6005CAEC2 /* NLLrcParseTool.m in Sources */,

@@ -70,6 +70,12 @@ static NLAudioRecordTool * audioRecordTool = nil;
     
     NSDictionary * recordSettings = @{AVFormatIDKey:@(kAudioFormatLinearPCM),AVSampleRateKey:@(11025.0),AVNumberOfChannelsKey:@(2),AVEncoderAudioQualityKey:@(AVAudioQualityMin)};
     if (!_audioRecorder) {
+        /*真机必备*/
+        AVAudioSession * recorder = [AVAudioSession sharedInstance];
+         NSError * sessionError;
+        [recorder setCategory:AVAudioSessionCategoryPlayAndRecord error:&sessionError];
+        [recorder setActive:YES error:nil];
+        /*真机必备*/
         self.audioRecorder = [[AVAudioRecorder alloc] initWithURL:[self setSavePath:fileName] settings:recordSettings error:nil];
     }
 }
@@ -152,8 +158,13 @@ static NLAudioRecordTool * audioRecordTool = nil;
 }
 
 - (void)playRecord:(NSString *)rPath{
-    
+    NSLog(@"audio path : %@",rPath);
     if (rPath && !_audioPlayer) {
+        /*真机必备*/
+        AVAudioSession *audioSession = [AVAudioSession sharedInstance];
+        [audioSession setCategory:AVAudioSessionCategoryPlayback error:nil];
+        [audioSession setActive:YES error:nil];
+        /*真机必备*/
         NSURL * recordUrl = [NSURL fileURLWithPath:rPath];
         _audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:recordUrl error:nil];
     }
