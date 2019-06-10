@@ -17,12 +17,16 @@
 		B332897B20B416330016FF3E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B332897A20B416330016FF3E /* main.m */; };
 		B332898520B416330016FF3E /* LeoWorkshopOCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B332898420B416330016FF3E /* LeoWorkshopOCTests.m */; };
 		B332899020B416330016FF3E /* LeoWorkshopOCUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B332898F20B416330016FF3E /* LeoWorkshopOCUITests.m */; };
+		B34934B222A8082F0091740B /* 1544508782846496.txt in Resources */ = {isa = PBXBuildFile; fileRef = B34934B122A8082F0091740B /* 1544508782846496.txt */; };
 		B3524BD8224B4E89007B86BA /* NLMusicLyricScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3524BD7224B4E89007B86BA /* NLMusicLyricScrollViewController.m */; };
 		B3524BDB224B5EC6007B86BA /* NLPlayerTool.m in Sources */ = {isa = PBXBuildFile; fileRef = B3524BDA224B5EC6007B86BA /* NLPlayerTool.m */; };
 		B3524BDE224CB4CE007B86BA /* NLTouchTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = B3524BDD224CB4CE007B86BA /* NLTouchTableView.m */; };
+		B3630E922283C60E0042D3DE /* NLInAppPurchaseTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3630E912283C60E0042D3DE /* NLInAppPurchaseTestViewController.m */; };
 		B37C38B02248C65E00D847D1 /* NLAudioRecordTool.m in Sources */ = {isa = PBXBuildFile; fileRef = B37C38AF2248C65E00D847D1 /* NLAudioRecordTool.m */; };
 		B37C38B32248E11B00D847D1 /* NLAudioRecordToolTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B37C38B22248E11B00D847D1 /* NLAudioRecordToolTestViewController.m */; };
 		B37C38B722490F7100D847D1 /* libmp3lame.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B37C38B622490F7100D847D1 /* libmp3lame.a */; };
+		B3980AB62283C30600F98A80 /* NLInAppPurchaseTool.m in Sources */ = {isa = PBXBuildFile; fileRef = B3980AB42283C30600F98A80 /* NLInAppPurchaseTool.m */; };
+		B3980AB82283C36900F98A80 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3980AB72283C36900F98A80 /* StoreKit.framework */; };
 		B3A00A9220B434E70019C5C2 /* NLWXEventModule.m in Sources */ = {isa = PBXBuildFile; fileRef = B3A00A8820B434E70019C5C2 /* NLWXEventModule.m */; };
 		B3A00A9320B434E70019C5C2 /* NLWXImageLoaderDefaultImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = B3A00A8920B434E70019C5C2 /* NLWXImageLoaderDefaultImpl.m */; };
 		B3A00A9420B434E70019C5C2 /* NLWXGifImageComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = B3A00A8A20B434E70019C5C2 /* NLWXGifImageComponent.m */; };
@@ -42,6 +46,7 @@
 		B3AA74AC224764FE005CAEC2 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3AA74AB224764FE005CAEC2 /* SystemConfiguration.framework */; };
 		B3AA74AF22476BF4005CAEC2 /* NLOSSManageTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3AA74AE22476BF4005CAEC2 /* NLOSSManageTestViewController.m */; };
 		B3DE2BC8226F331800926FA9 /* NLPlayerTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3DE2BC7226F331800926FA9 /* NLPlayerTestViewController.m */; };
+		B3E3D5FA22A11C0D00B51CD6 /* NLViewAnimationTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E3D5F922A11C0D00B51CD6 /* NLViewAnimationTestViewController.m */; };
 		B3E6EEF120C17B1C004489B0 /* NLThreadExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E6EEF020C17B1C004489B0 /* NLThreadExampleViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -83,18 +88,24 @@
 		B332898B20B416330016FF3E /* LeoWorkshopOCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LeoWorkshopOCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B332898F20B416330016FF3E /* LeoWorkshopOCUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LeoWorkshopOCUITests.m; sourceTree = "<group>"; };
 		B332899120B416330016FF3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B34934B122A8082F0091740B /* 1544508782846496.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 1544508782846496.txt; sourceTree = "<group>"; };
 		B3524BD6224B4E89007B86BA /* NLMusicLyricScrollViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NLMusicLyricScrollViewController.h; sourceTree = "<group>"; };
 		B3524BD7224B4E89007B86BA /* NLMusicLyricScrollViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NLMusicLyricScrollViewController.m; sourceTree = "<group>"; };
 		B3524BD9224B5EC6007B86BA /* NLPlayerTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NLPlayerTool.h; sourceTree = "<group>"; };
 		B3524BDA224B5EC6007B86BA /* NLPlayerTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NLPlayerTool.m; sourceTree = "<group>"; };
 		B3524BDC224CB4CE007B86BA /* NLTouchTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NLTouchTableView.h; sourceTree = "<group>"; };
 		B3524BDD224CB4CE007B86BA /* NLTouchTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NLTouchTableView.m; sourceTree = "<group>"; };
+		B3630E902283C60E0042D3DE /* NLInAppPurchaseTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NLInAppPurchaseTestViewController.h; sourceTree = "<group>"; };
+		B3630E912283C60E0042D3DE /* NLInAppPurchaseTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NLInAppPurchaseTestViewController.m; sourceTree = "<group>"; };
 		B37C38AE2248C65E00D847D1 /* NLAudioRecordTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NLAudioRecordTool.h; sourceTree = "<group>"; };
 		B37C38AF2248C65E00D847D1 /* NLAudioRecordTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NLAudioRecordTool.m; sourceTree = "<group>"; };
 		B37C38B12248E11B00D847D1 /* NLAudioRecordToolTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NLAudioRecordToolTestViewController.h; sourceTree = "<group>"; };
 		B37C38B22248E11B00D847D1 /* NLAudioRecordToolTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NLAudioRecordToolTestViewController.m; sourceTree = "<group>"; };
 		B37C38B522490F7100D847D1 /* lame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lame.h; sourceTree = "<group>"; };
 		B37C38B622490F7100D847D1 /* libmp3lame.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libmp3lame.a; sourceTree = "<group>"; };
+		B3980AB42283C30600F98A80 /* NLInAppPurchaseTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NLInAppPurchaseTool.m; sourceTree = "<group>"; };
+		B3980AB52283C30600F98A80 /* NLInAppPurchaseTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NLInAppPurchaseTool.h; sourceTree = "<group>"; };
+		B3980AB72283C36900F98A80 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		B3A00A8820B434E70019C5C2 /* NLWXEventModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NLWXEventModule.m; sourceTree = "<group>"; };
 		B3A00A8920B434E70019C5C2 /* NLWXImageLoaderDefaultImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NLWXImageLoaderDefaultImpl.m; sourceTree = "<group>"; };
 		B3A00A8A20B434E70019C5C2 /* NLWXGifImageComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NLWXGifImageComponent.m; sourceTree = "<group>"; };
@@ -124,6 +135,9 @@
 		B3AA74AE22476BF4005CAEC2 /* NLOSSManageTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NLOSSManageTestViewController.m; sourceTree = "<group>"; };
 		B3DE2BC6226F331800926FA9 /* NLPlayerTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NLPlayerTestViewController.h; sourceTree = "<group>"; };
 		B3DE2BC7226F331800926FA9 /* NLPlayerTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NLPlayerTestViewController.m; sourceTree = "<group>"; };
+		B3E3D5F822A11C0D00B51CD6 /* NLViewAnimationTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NLViewAnimationTestViewController.h; sourceTree = "<group>"; };
+		B3E3D5F922A11C0D00B51CD6 /* NLViewAnimationTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NLViewAnimationTestViewController.m; sourceTree = "<group>"; };
+		B3E3D5FB22A13B6500B51CD6 /* NLRateAdaptationTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NLRateAdaptationTool.h; sourceTree = "<group>"; };
 		B3E6EEEF20C17B1C004489B0 /* NLThreadExampleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NLThreadExampleViewController.h; sourceTree = "<group>"; };
 		B3E6EEF020C17B1C004489B0 /* NLThreadExampleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NLThreadExampleViewController.m; sourceTree = "<group>"; };
 		B3E6EEF420C17F8A004489B0 /* LeoWorkshopOC_PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeoWorkshopOC_PrefixHeader.pch; sourceTree = "<group>"; };
@@ -134,6 +148,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3980AB82283C36900F98A80 /* StoreKit.framework in Frameworks */,
 				B37C38B722490F7100D847D1 /* libmp3lame.a in Frameworks */,
 				B3AA74AC224764FE005CAEC2 /* SystemConfiguration.framework in Frameworks */,
 				B3AA74AA224764F1005CAEC2 /* CoreTelephony.framework in Frameworks */,
@@ -162,6 +177,7 @@
 		1D568AC42A71B7C92A39F8BC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B3980AB72283C36900F98A80 /* StoreKit.framework */,
 				B3AA74AB224764FE005CAEC2 /* SystemConfiguration.framework */,
 				B3AA74A9224764F1005CAEC2 /* CoreTelephony.framework */,
 				B3AA74A7224764E5005CAEC2 /* libresolv.tbd */,
@@ -204,6 +220,9 @@
 		B332896720B416320016FF3E /* LeoWorkshopOC */ = {
 			isa = PBXGroup;
 			children = (
+				B3E3D5FC22A13B6E00B51CD6 /* RateAdaptation */,
+				B3E3D5F722A11BAD00B51CD6 /* ViewAnimation */,
+				B3980AB32283C2DF00F98A80 /* InAppPurchaseTool */,
 				B3DE2BC5226F324400926FA9 /* AvPlayerTool */,
 				B3524BD5224B4C4D007B86BA /* Music+LyricScroll */,
 				B37C38AA2248C3A600D847D1 /* AudioRecordTool */,
@@ -276,6 +295,17 @@
 			path = lameTool;
 			sourceTree = "<group>";
 		};
+		B3980AB32283C2DF00F98A80 /* InAppPurchaseTool */ = {
+			isa = PBXGroup;
+			children = (
+				B3980AB52283C30600F98A80 /* NLInAppPurchaseTool.h */,
+				B3980AB42283C30600F98A80 /* NLInAppPurchaseTool.m */,
+				B3630E902283C60E0042D3DE /* NLInAppPurchaseTestViewController.h */,
+				B3630E912283C60E0042D3DE /* NLInAppPurchaseTestViewController.m */,
+			);
+			path = InAppPurchaseTool;
+			sourceTree = "<group>";
+		};
 		B3A00A8720B434E70019C5C2 /* WeexExample */ = {
 			isa = PBXGroup;
 			children = (
@@ -297,6 +327,7 @@
 		B3AA749522472D2E005CAEC2 /* LrcParseTool */ = {
 			isa = PBXGroup;
 			children = (
+				B34934B122A8082F0091740B /* 1544508782846496.txt */,
 				B3A566A9225218BA00BEEE84 /* 1544440926638246.txt */,
 				B3A566A7225209D100BEEE84 /* 1553073016455_a.txt */,
 				B3A566A52252089300BEEE84 /* 1544888229409284.txt */,
@@ -330,6 +361,23 @@
 				B3DE2BC7226F331800926FA9 /* NLPlayerTestViewController.m */,
 			);
 			path = AvPlayerTool;
+			sourceTree = "<group>";
+		};
+		B3E3D5F722A11BAD00B51CD6 /* ViewAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				B3E3D5F822A11C0D00B51CD6 /* NLViewAnimationTestViewController.h */,
+				B3E3D5F922A11C0D00B51CD6 /* NLViewAnimationTestViewController.m */,
+			);
+			path = ViewAnimation;
+			sourceTree = "<group>";
+		};
+		B3E3D5FC22A13B6E00B51CD6 /* RateAdaptation */ = {
+			isa = PBXGroup;
+			children = (
+				B3E3D5FB22A13B6500B51CD6 /* NLRateAdaptationTool.h */,
+			);
+			path = RateAdaptation;
 			sourceTree = "<group>";
 		};
 		B3E6EEEE20C17A8C004489B0 /* ThreadExample */ = {
@@ -411,6 +459,11 @@
 				TargetAttributes = {
 					B332896420B416320016FF3E = {
 						CreatedOnToolsVersion = 9.3.1;
+						SystemCapabilities = {
+							com.apple.InAppPurchase = {
+								enabled = 1;
+							};
+						};
 					};
 					B332897F20B416330016FF3E = {
 						CreatedOnToolsVersion = 9.3.1;
@@ -454,6 +507,7 @@
 				B3A566AA225218BA00BEEE84 /* 1544440926638246.txt in Resources */,
 				B3A566A62252089300BEEE84 /* 1544888229409284.txt in Resources */,
 				B3AA749B22472D2E005CAEC2 /* 1553073016455.txt in Resources */,
+				B34934B222A8082F0091740B /* 1544508782846496.txt in Resources */,
 				B3A566A8225209D100BEEE84 /* 1553073016455_a.txt in Resources */,
 				B3A00AA020B588C60019C5C2 /* index.native.js in Resources */,
 			);
@@ -522,6 +576,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B3A00A9220B434E70019C5C2 /* NLWXEventModule.m in Sources */,
+				B3E3D5FA22A11C0D00B51CD6 /* NLViewAnimationTestViewController.m in Sources */,
 				B332896D20B416320016FF3E /* ViewController.m in Sources */,
 				B332897320B416320016FF3E /* LeoWorkshopOC.xcdatamodeld in Sources */,
 				B3AA74AF22476BF4005CAEC2 /* NLOSSManageTestViewController.m in Sources */,
@@ -531,9 +586,11 @@
 				B3524BD8224B4E89007B86BA /* NLMusicLyricScrollViewController.m in Sources */,
 				B3A00A9320B434E70019C5C2 /* NLWXImageLoaderDefaultImpl.m in Sources */,
 				B3DE2BC8226F331800926FA9 /* NLPlayerTestViewController.m in Sources */,
+				B3980AB62283C30600F98A80 /* NLInAppPurchaseTool.m in Sources */,
 				B37C38B32248E11B00D847D1 /* NLAudioRecordToolTestViewController.m in Sources */,
 				B3524BDE224CB4CE007B86BA /* NLTouchTableView.m in Sources */,
 				B3AA749F22472FA6005CAEC2 /* NLLrcParseTool.m in Sources */,
+				B3630E922283C60E0042D3DE /* NLInAppPurchaseTestViewController.m in Sources */,
 				B3A00A9520B434E70019C5C2 /* NLWeexSDKManager.m in Sources */,
 				B3E6EEF120C17B1C004489B0 /* NLThreadExampleViewController.m in Sources */,
 				B3AA74A622476285005CAEC2 /* NLOSSManage.m in Sources */,
@@ -711,10 +768,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3QJ2Q6NGG4;
+				DEVELOPMENT_TEAM = SMMMJC6TL5;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PRODUCT_NAME)/LeoWorkshopOC_PrefixHeader.pch";
 				INFOPLIST_FILE = LeoWorkshopOC/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -723,7 +780,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/LeoWorkshopOC/AudioRecordTool/lameTool",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.leo.LeoWorkshopOC;
+				PRODUCT_BUNDLE_IDENTIFIER = com.miaozhang.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -735,10 +792,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3QJ2Q6NGG4;
+				DEVELOPMENT_TEAM = SMMMJC6TL5;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PRODUCT_NAME)/LeoWorkshopOC_PrefixHeader.pch";
 				INFOPLIST_FILE = LeoWorkshopOC/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -747,7 +804,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/LeoWorkshopOC/AudioRecordTool/lameTool",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.leo.LeoWorkshopOC;
+				PRODUCT_BUNDLE_IDENTIFIER = com.miaozhang.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

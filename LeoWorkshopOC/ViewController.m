@@ -14,6 +14,8 @@
 #import "NLAudioRecordToolTestViewController.h"
 #import "NLMusicLyricScrollViewController.h"
 #import "NLPlayerTestViewController.h"
+#import "NLInAppPurchaseTestViewController.h"
+#import "NLViewAnimationTestViewController.h"
 
 @interface ViewController ()<UITableViewDataSource,UITableViewDelegate>
 
@@ -44,7 +46,7 @@
 }
 
 - (void)layoutView{
-    _dataList = [NSArray arrayWithObjects:@"weex example",@"NSThread NSOperation GCD",@"Lrc Parse",@"Ali Yun OSS Upload Download",@"Audio Record",@"Music Lyric Scroll",@"AVPlayer example",nil];
+    _dataList = [NSArray arrayWithObjects:@"weex example",@"NSThread NSOperation GCD",@"Lrc Parse",@"Ali Yun OSS Upload Download",@"Audio Record",@"Music Lyric Scroll",@"AVPlayer example", @"InAPP Purchase example",@"View Animation",nil];
     __weak __typeof(self) wself = self;
     [self.view addSubview:self.vcTableView];
     [self.vcTableView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -110,6 +112,16 @@
             [self.navigationController pushViewController:PTVC animated:YES];
         }
             break;
+        case 7:{
+            NLInAppPurchaseTestViewController * inAppVC = [[NLInAppPurchaseTestViewController alloc] init];
+            [self.navigationController pushViewController:inAppVC animated:YES];
+        }
+            break;
+        case 8:
+        {
+            NLViewAnimationTestViewController * VATVC = [[NLViewAnimationTestViewController alloc] init];
+            [self.navigationController pushViewController:VATVC animated:YES];
+        }
         default:
             break;
     }
