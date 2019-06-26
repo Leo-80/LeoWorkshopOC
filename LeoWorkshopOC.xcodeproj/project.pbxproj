@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -25,6 +25,7 @@
 		B37C38B02248C65E00D847D1 /* NLAudioRecordTool.m in Sources */ = {isa = PBXBuildFile; fileRef = B37C38AF2248C65E00D847D1 /* NLAudioRecordTool.m */; };
 		B37C38B32248E11B00D847D1 /* NLAudioRecordToolTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B37C38B22248E11B00D847D1 /* NLAudioRecordToolTestViewController.m */; };
 		B37C38B722490F7100D847D1 /* libmp3lame.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B37C38B622490F7100D847D1 /* libmp3lame.a */; };
+		B3974C0922B7BEB400DE7DFE /* NLBubbleHintView.m in Sources */ = {isa = PBXBuildFile; fileRef = B3974C0822B7BEB400DE7DFE /* NLBubbleHintView.m */; };
 		B3980AB62283C30600F98A80 /* NLInAppPurchaseTool.m in Sources */ = {isa = PBXBuildFile; fileRef = B3980AB42283C30600F98A80 /* NLInAppPurchaseTool.m */; };
 		B3980AB82283C36900F98A80 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3980AB72283C36900F98A80 /* StoreKit.framework */; };
 		B3A00A9220B434E70019C5C2 /* NLWXEventModule.m in Sources */ = {isa = PBXBuildFile; fileRef = B3A00A8820B434E70019C5C2 /* NLWXEventModule.m */; };
@@ -103,6 +104,8 @@
 		B37C38B22248E11B00D847D1 /* NLAudioRecordToolTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NLAudioRecordToolTestViewController.m; sourceTree = "<group>"; };
 		B37C38B522490F7100D847D1 /* lame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lame.h; sourceTree = "<group>"; };
 		B37C38B622490F7100D847D1 /* libmp3lame.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libmp3lame.a; sourceTree = "<group>"; };
+		B3974C0722B7BEB400DE7DFE /* NLBubbleHintView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NLBubbleHintView.h; sourceTree = "<group>"; };
+		B3974C0822B7BEB400DE7DFE /* NLBubbleHintView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NLBubbleHintView.m; sourceTree = "<group>"; };
 		B3980AB42283C30600F98A80 /* NLInAppPurchaseTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NLInAppPurchaseTool.m; sourceTree = "<group>"; };
 		B3980AB52283C30600F98A80 /* NLInAppPurchaseTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NLInAppPurchaseTool.h; sourceTree = "<group>"; };
 		B3980AB72283C36900F98A80 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
@@ -220,6 +223,7 @@
 		B332896720B416320016FF3E /* LeoWorkshopOC */ = {
 			isa = PBXGroup;
 			children = (
+				B3974C0622B7BE6100DE7DFE /* BubbleHint */,
 				B3E3D5FC22A13B6E00B51CD6 /* RateAdaptation */,
 				B3E3D5F722A11BAD00B51CD6 /* ViewAnimation */,
 				B3980AB32283C2DF00F98A80 /* InAppPurchaseTool */,
@@ -293,6 +297,15 @@
 				B37C38B622490F7100D847D1 /* libmp3lame.a */,
 			);
 			path = lameTool;
+			sourceTree = "<group>";
+		};
+		B3974C0622B7BE6100DE7DFE /* BubbleHint */ = {
+			isa = PBXGroup;
+			children = (
+				B3974C0722B7BEB400DE7DFE /* NLBubbleHintView.h */,
+				B3974C0822B7BEB400DE7DFE /* NLBubbleHintView.m */,
+			);
+			path = BubbleHint;
 			sourceTree = "<group>";
 		};
 		B3980AB32283C2DF00F98A80 /* InAppPurchaseTool */ = {
@@ -553,15 +566,12 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-LeoWorkshopOC/Pods-LeoWorkshopOC-resources.sh",
-				"${PODS_ROOT}/WeexSDK/pre-build/native-bundle-main.js",
-				"${PODS_ROOT}/WeexSDK/ios/sdk/WeexSDK/Resources/wx_load_error@3x.png",
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LeoWorkshopOC/Pods-LeoWorkshopOC-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/native-bundle-main.js",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/wx_load_error@3x.png",
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LeoWorkshopOC/Pods-LeoWorkshopOC-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -576,6 +586,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B3A00A9220B434E70019C5C2 /* NLWXEventModule.m in Sources */,
+				B3974C0922B7BEB400DE7DFE /* NLBubbleHintView.m in Sources */,
 				B3E3D5FA22A11C0D00B51CD6 /* NLViewAnimationTestViewController.m in Sources */,
 				B332896D20B416320016FF3E /* ViewController.m in Sources */,
 				B332897320B416320016FF3E /* LeoWorkshopOC.xcdatamodeld in Sources */,
